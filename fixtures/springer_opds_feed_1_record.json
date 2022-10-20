@@ -1,0 +1,53 @@
+{
+      "metadata": {
+        "identifier": "https://dx.doi.org/10.1007/0-306-46801-8",
+        "modified": "2022-09-26T21:12:50.487380",
+        "title": "Textbook of Healthcare Ethics",
+        "language": "eng",
+        "@type": "http://schema.org/EBook",
+        "publisher": "Springer",
+        "published": "2002-01-01",
+        "subject": [
+          {
+            "scheme": "http://librarysimplified.org/terms/fiction/",
+            "code": "Nonfiction",
+            "name": "Nonfiction"
+          },
+          "Medicine & Public Health",
+          "Internal Medicine",
+          "General Practice / Family Medicine",
+          "Public Health",
+          "Epidemiology",
+          "Medicine/Public Health, general",
+          "Ethics"
+        ],
+        "author": [
+          {
+            "name": "Loewy, Erich H."
+          }
+        ]
+      },
+      "images": [
+        {
+          "href": "https://covers.springernature.com/books/jpg_height_648_pixels/978-0-306-46801-8.jpg",
+          "type": "image/jpeg"
+        },
+        {
+          "href": "https://covers.springernature.com/books/jpg_width_125_pixels/978-0-306-46801-8.jpg",
+          "width": 125,
+          "type": "image/jpeg"
+        },
+        {
+          "href": "https://covers.springernature.com/books/jpg_width_95_pixels/978-0-306-46801-8.jpg",
+          "width": 95,
+          "type": "image/jpeg"
+        }
+      ],
+      "links": [
+        {
+          "rel": "http://opds-spec.org/acquisition/open-access",
+          "type": "application/pdf",
+          "href": "https://sp.springer.com/saml/login?idp=urn%3Amace%3Aincommon%3Acolumbia.edu&targetUrl=https%3A//link.springer.com/openurl/pdf%3Fid%3Ddoi%3A10.1007/0-306-46801-8"
+        }
+      ]
+    }

@@ -1,0 +1,106 @@
+{
+    "apiMessage": "This JSON was provided by Springer Nature",
+    "query": "doi:10.1007/978-1-349-11550-1",
+    "apiKey": "67b52d6a2f27c07d605f704dcdb6e3e3",
+    "result": [
+        {
+            "total": "1",
+            "start": "1",
+            "pageLength": "10",
+            "recordsDisplayed": "1"
+        }
+    ],
+    "records": [
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-1-349-11550-1",
+            "language": "en",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-1-349-11550-1"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-1-349-11550-1"
+                }
+            ],
+            "creators": [
+                {
+                    "creator": "Buckley, Alan"
+                }
+            ],
+            "bookEditors": [],
+            "publicationName": "Computer Studies",
+            "openaccess": "false",
+            "doi": "10.1007/978-1-349-11550-1",
+            "publisher": "Springer",
+            "publicationDate": "1991-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-0-333-52428-2",
+            "electronicIsbn": "978-1-349-11550-1",
+            "isbn": "978-0-333-52428-2",
+            "genre": "Undergraduate textbook",
+            "copyright": "©1991 Macmillan Publishers Limited",
+            "abstract": "",
+            "conferenceInfo": []
+        }
+    ],
+    "facets": [
+        {
+            "name": "subject",
+            "values": [
+                {
+                    "value": "Computer Science",
+                    "count": "1"
+                },
+                {
+                    "value": "Theory of Computation",
+                    "count": "1"
+                }
+            ]
+        },
+        {
+            "name": "keyword",
+            "values": []
+        },
+        {
+            "name": "pub",
+            "values": [
+                {
+                    "value": "Computer Studies",
+                    "count": "1"
+                }
+            ]
+        },
+        {
+            "name": "year",
+            "values": [
+                {
+                    "value": "1991",
+                    "count": "1"
+                }
+            ]
+        },
+        {
+            "name": "country",
+            "values": [
+                {
+                    "value": "United Kingdom",
+                    "count": "1"
+                }
+            ]
+        },
+        {
+            "name": "type",
+            "values": [
+                {
+                    "value": "Book",
+                    "count": "1"
+                }
+            ]
+        }
+    ]
+}
