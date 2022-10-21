@@ -1,0 +1,4170 @@
+{
+    "apiMessage": "This JSON was provided by Springer Nature",
+    "query": "sort:date",
+    "apiKey": "3ee6153f5ef441579808d667c16df936",
+    "nextPage": "/bookmeta/v1/json?q=sort:date&s=200341&onlyBooks=true&p=1000&api_key=3ee6153f5ef441579808d667c16df936",
+    "previousPage": "/bookmeta/v1/json?q=sort:date&s=200141&onlyBooks=true&p=1000&api_key=3ee6153f5ef441579808d667c16df936",
+    "result": [
+        {
+            "total": "302279",
+            "start": "200241",
+            "pageLength": "100",
+            "recordsDisplayed": "100"
+        }
+    ],
+    "records": [
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-3-322-97672-7",
+            "language": "de",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-3-322-97672-7"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-3-322-97672-7"
+                }
+            ],
+            "creators": [
+                {
+                    "creator": "Maas, Jörg"
+                }
+            ],
+            "bookEditors": [],
+            "publicationName": "Identität und Stigma-Management von homosexuellen Führungskräften",
+            "openaccess": "false",
+            "doi": "10.1007/978-3-322-97672-7",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-3-8244-4356-7",
+            "electronicIsbn": "978-3-322-97672-7",
+            "isbn": "978-3-8244-4356-7",
+            "genre": "Monograph",
+            "copyright": "©1999 Deutscher Universitäts-Verlag | Springer Fachmedien Wiesbaden GmbH, Wiesbaden",
+            "abstract": "",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-1-349-27300-3",
+            "language": "en",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-1-349-27300-3"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-1-349-27300-3"
+                }
+            ],
+            "creators": [
+                {
+                    "creator": "Gin, Ooi Keat"
+                }
+            ],
+            "bookEditors": [],
+            "publicationName": "Rising Sun over Borneo",
+            "openaccess": "false",
+            "doi": "10.1007/978-1-349-27300-3",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-1-349-27302-7",
+            "electronicIsbn": "978-1-349-27300-3",
+            "isbn": "978-1-349-27302-7",
+            "genre": "Monograph",
+            "copyright": "©1999 Ooi Keat Gin",
+            "abstract": "",
+            "conferenceInfo": [],
+            "ePubUrl": "https://link.springer.com/download/epub/10.1007/978-1-349-27300-3.epub"
+        },
+        {
+            "contentType": "Book Protocol",
+            "identifier": "doi:10.1385/1592592503",
+            "language": "en",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1385/1592592503"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1385/1592592503"
+                }
+            ],
+            "title": "Calcium Signaling Protocols",
+            "creators": [],
+            "bookEditors": [
+                {
+                    "bookEditor": "Lambert, David G."
+                }
+            ],
+            "publicationName": "Calcium Signaling Protocols",
+            "openaccess": "false",
+            "doi": "10.1385/1592592503",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-0-89603-597-3",
+            "electronicIsbn": "978-1-59259-250-0",
+            "isbn": "978-0-89603-597-3",
+            "genre": "Contributed volume",
+            "copyright": "©1999 Humana Press",
+            "abstract": "",
+            "conferenceInfo": [],
+            "ePubUrl": "https://link.springer.com/download/epub/10.1385/1592592503.epub"
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/b102331",
+            "language": "en",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/b102331"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/b102331"
+                }
+            ],
+            "creators": [],
+            "bookEditors": [
+                {
+                    "bookEditor": "Tallman, Martin S."
+                },
+                {
+                    "bookEditor": "Gordon, Leo I."
+                }
+            ],
+            "publicationName": "Diagnostic and Therapeutic Advances in Hematologic Malignancies",
+            "openaccess": "false",
+            "doi": "10.1007/b102331",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-0-7923-8206-5",
+            "electronicIsbn": "978-0-585-38571-6",
+            "isbn": "978-0-7923-8206-5",
+            "genre": "Contributed volume",
+            "copyright": "©1999 Kluwer Academic Publishers",
+            "abstract": "",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-1-4615-5259-8",
+            "language": "en",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-1-4615-5259-8"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-1-4615-5259-8"
+                }
+            ],
+            "creators": [
+                {
+                    "creator": "Satterfield, Teresa"
+                }
+            ],
+            "bookEditors": [],
+            "publicationName": "Bilingual Selection of Syntactic Knowledge",
+            "openaccess": "false",
+            "doi": "10.1007/978-1-4615-5259-8",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-1-4613-7398-8",
+            "electronicIsbn": "978-1-4615-5259-8",
+            "isbn": "978-1-4613-7398-8",
+            "genre": "Contributed volume",
+            "copyright": "©1999 Kluwer Academic Publishers",
+            "abstract": "",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-3-322-97430-3",
+            "language": "de",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-3-322-97430-3"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-3-322-97430-3"
+                }
+            ],
+            "creators": [
+                {
+                    "creator": "Schneider, Nicole"
+                },
+                {
+                    "creator": "Spellerberg, Annette"
+                }
+            ],
+            "bookEditors": [],
+            "publicationName": "Lebensstile, Wohnbedürfnisse und räumliche Mobilität",
+            "openaccess": "false",
+            "doi": "10.1007/978-3-322-97430-3",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-3-322-97431-0",
+            "electronicIsbn": "978-3-322-97430-3",
+            "isbn": "978-3-322-97431-0",
+            "genre": "Monograph",
+            "copyright": "©1999 VS Verlag für Sozialwissenschaften | Springer Fachmedien Wiesbaden GmbH, Wiesbaden",
+            "abstract": "",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-3-662-03766-9",
+            "language": "en",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-3-662-03766-9"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-3-662-03766-9"
+                }
+            ],
+            "creators": [
+                {
+                    "creator": "Bothma, J. du P."
+                },
+                {
+                    "creator": "Walker, Clive"
+                }
+            ],
+            "bookEditors": [],
+            "publicationName": "Larger Carnivores of the African Savannas",
+            "openaccess": "false",
+            "doi": "10.1007/978-3-662-03766-9",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-3-662-03768-3",
+            "electronicIsbn": "978-3-662-03766-9",
+            "isbn": "978-3-662-03768-3",
+            "genre": "Professional book",
+            "copyright": "©1999 Springer-Verlag Berlin Heidelberg",
+            "abstract": "",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-3-0348-8726-7",
+            "language": "en",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-3-0348-8726-7"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-3-0348-8726-7"
+                }
+            ],
+            "creators": [
+                {
+                    "creator": "Stroeker, Roelof J."
+                },
+                {
+                    "creator": "Kaashoek, Johan F."
+                }
+            ],
+            "bookEditors": [],
+            "publicationName": "Discovering Mathematics with Maple",
+            "openaccess": "false",
+            "doi": "10.1007/978-3-0348-8726-7",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-3-7643-6091-7",
+            "electronicIsbn": "978-3-0348-8726-7",
+            "isbn": "978-3-7643-6091-7",
+            "genre": "Undergraduate textbook",
+            "copyright": "©1999 Birkhäuser Verlag",
+            "abstract": "",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-3-0348-8734-2",
+            "language": "de",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-3-0348-8734-2"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-3-0348-8734-2"
+                }
+            ],
+            "creators": [
+                {
+                    "creator": "Bauerfeind, Klaus"
+                }
+            ],
+            "bookEditors": [],
+            "publicationName": "Steuerung und Regelung der Turboflugtriebwerke",
+            "openaccess": "false",
+            "doi": "10.1007/978-3-0348-8734-2",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-3-0348-9748-8",
+            "electronicIsbn": "978-3-0348-8734-2",
+            "isbn": "978-3-0348-9748-8",
+            "genre": "Manual",
+            "copyright": "©1999 Birkhäuser Verlag",
+            "abstract": "",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1057/9780230371828",
+            "language": "en",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1057/9780230371828"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1057/9780230371828"
+                }
+            ],
+            "creators": [
+                {
+                    "creator": "Besomi, Daniele"
+                }
+            ],
+            "bookEditors": [],
+            "publicationName": "The Making of Harrod’s Dynamics",
+            "openaccess": "false",
+            "doi": "10.1057/9780230371828",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-1-349-40845-0",
+            "electronicIsbn": "978-0-230-37182-8",
+            "isbn": "978-1-349-40845-0",
+            "genre": "Monograph",
+            "copyright": "©1999 Palgrave Macmillan, a division of Macmillan Publishers Limited",
+            "abstract": "This book inquires into the origin and early development of Roy Harrod's notion of economic dynamics. It examines how Harrod gathered the analytical, methodological and epistemic components of his theory, and how these are logically connected. It shows that the organizing concept is the instability principle, a premise rather than a result of Harrod's trade cycle theory. The relationship of Harrod's dynamics with the 'orthodox theory' and with the alternative approaches to dynamics is also examined.",
+            "conferenceInfo": [],
+            "ePubUrl": "https://link.springer.com/download/epub/10.1057/9780230371828.epub"
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1057/9780230286580",
+            "language": "en",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1057/9780230286580"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1057/9780230286580"
+                }
+            ],
+            "creators": [
+                {
+                    "creator": "Rafferty, Oliver P."
+                }
+            ],
+            "bookEditors": [],
+            "publicationName": "The Church, the State and the Fenian Threat 1861–75",
+            "openaccess": "false",
+            "doi": "10.1057/9780230286580",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-1-349-41184-9",
+            "electronicIsbn": "978-0-230-28658-0",
+            "isbn": "978-1-349-41184-9",
+            "genre": "Monograph",
+            "copyright": "©1999 Oliver P. Rafferty",
+            "abstract": "This book examines the mechanisms of the Irish revolutionary Fenian Brotherhood in the early years of its existence. Drawing on a wide range of material from places as diverse as Rome and Toronto it seeks to set the Fenian struggle within the context of competing church and state influence in mid-nineteenth century Irish society. It is particularly strong on the transatlantic comparative dimensions of church, state and Fenian activity, and demonstrates how the Fenians managed to change, forever, the terms of Irish political and social debate.",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-1-349-14859-2",
+            "language": "en",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-1-349-14859-2"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-1-349-14859-2"
+                }
+            ],
+            "creators": [
+                {
+                    "creator": "Emmanuel, Dominic"
+                }
+            ],
+            "bookEditors": [],
+            "publicationName": "Challenges of Christian Communication and Broadcasting",
+            "openaccess": "false",
+            "doi": "10.1007/978-1-349-14859-2",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-1-349-14861-5",
+            "electronicIsbn": "978-1-349-14859-2",
+            "isbn": "978-1-349-14861-5",
+            "genre": "Monograph",
+            "copyright": "©1999 Palgrave Macmillan, a division of Macmillan Publishers Limited",
+            "abstract": "",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1057/9781403915900",
+            "language": "en",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1057/9781403915900"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1057/9781403915900"
+                }
+            ],
+            "creators": [
+                {
+                    "creator": "Stachura, Peter D."
+                }
+            ],
+            "bookEditors": [],
+            "publicationName": "Poland in the Twentieth Century",
+            "openaccess": "false",
+            "doi": "10.1057/9781403915900",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-1-349-41281-5",
+            "electronicIsbn": "978-1-4039-1590-0",
+            "isbn": "978-1-349-41281-5",
+            "genre": "Monograph",
+            "copyright": "©1999 Palgrave Macmillan, a division of Macmillan Publishers Limited",
+            "abstract": "",
+            "conferenceInfo": [],
+            "ePubUrl": "https://link.springer.com/download/epub/10.1057/9781403915900.epub"
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-1-349-15075-5",
+            "language": "en",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-1-349-15075-5"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-1-349-15075-5"
+                }
+            ],
+            "creators": [
+                {
+                    "creator": "McLeod, Ian"
+                }
+            ],
+            "bookEditors": [],
+            "publicationName": "Legal Method",
+            "openaccess": "false",
+            "doi": "10.1007/978-1-349-15075-5",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-0-333-79050-2",
+            "electronicIsbn": "978-1-349-15075-5",
+            "isbn": "978-0-333-79050-2",
+            "genre": "Undergraduate textbook",
+            "copyright": "©1999 Macmillan Publishers Limited",
+            "abstract": "",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-3-476-98613-9",
+            "language": "de",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-3-476-98613-9"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-3-476-98613-9"
+                }
+            ],
+            "creators": [],
+            "bookEditors": [
+                {
+                    "bookEditor": "Reibnitz, Barbara"
+                },
+                {
+                    "bookEditor": "Stauffacher-Schaub, Marianne"
+                }
+            ],
+            "publicationName": "Franz Overbeck: Werke und Nachlaß",
+            "openaccess": "false",
+            "doi": "10.1007/978-3-476-98613-9",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-3-476-01615-7",
+            "electronicIsbn": "978-3-476-98613-9",
+            "isbn": "978-3-476-01615-7",
+            "genre": "Monograph",
+            "copyright": "©1999 Springer-Verlag Berlin Heidelberg",
+            "abstract": "",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-3-663-08578-2",
+            "language": "de",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-3-663-08578-2"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-3-663-08578-2"
+                }
+            ],
+            "creators": [
+                {
+                    "creator": "Hagemann, Oliver N."
+                }
+            ],
+            "bookEditors": [],
+            "publicationName": "Innovationsmarketing für technologieorientierte kleine und mittlere Unternehmen",
+            "openaccess": "false",
+            "doi": "10.1007/978-3-663-08578-2",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-3-8244-6946-8",
+            "electronicIsbn": "978-3-663-08578-2",
+            "isbn": "978-3-8244-6946-8",
+            "genre": "German textbook",
+            "copyright": "©1999 Gabler Verlag | Springer Fachmedien Wiesbaden GmbH, Wiesbaden",
+            "abstract": "",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-3-0348-6378-0",
+            "language": "de",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-3-0348-6378-0"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-3-0348-6378-0"
+                }
+            ],
+            "creators": [
+                {
+                    "creator": "Boulanger, Philippe"
+                }
+            ],
+            "bookEditors": [],
+            "publicationName": "1001 Nacht",
+            "openaccess": "false",
+            "doi": "10.1007/978-3-0348-6378-0",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-3-7643-6132-7",
+            "electronicIsbn": "978-3-0348-6378-0",
+            "isbn": "978-3-7643-6132-7",
+            "genre": "Popular science",
+            "copyright": "©1999 Birkhäuser Basel",
+            "abstract": "",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-3-322-87327-9",
+            "language": "de",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-3-322-87327-9"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-3-322-87327-9"
+                }
+            ],
+            "creators": [
+                {
+                    "creator": "Wehner, Burkhard"
+                }
+            ],
+            "bookEditors": [],
+            "publicationName": "Prämierung des Friedens",
+            "openaccess": "false",
+            "doi": "10.1007/978-3-322-87327-9",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-3-531-13421-5",
+            "electronicIsbn": "978-3-322-87327-9",
+            "isbn": "978-3-531-13421-5",
+            "genre": "Professional book",
+            "copyright": "©1999 VS Verlag für Sozialwissenschaften | Springer Fachmedien Wiesbaden GmbH, Wiesbaden",
+            "abstract": "",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book Protocol",
+            "identifier": "doi:10.1385/0896033694",
+            "language": "en",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1385/0896033694"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1385/0896033694"
+                }
+            ],
+            "title": "HIV Protocols",
+            "creators": [],
+            "bookEditors": [
+                {
+                    "bookEditor": "Michael, Nelson L."
+                },
+                {
+                    "bookEditor": "Kim, Jerome H."
+                }
+            ],
+            "publicationName": "HIV Protocols",
+            "openaccess": "false",
+            "doi": "10.1385/0896033694",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-0-89603-369-6",
+            "electronicIsbn": "978-1-59259-601-0",
+            "isbn": "978-0-89603-369-6",
+            "genre": "Contributed volume",
+            "copyright": "©1999 Humana Press",
+            "abstract": "",
+            "conferenceInfo": [],
+            "ePubUrl": "https://link.springer.com/download/epub/10.1385/0896033694.epub"
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-3-322-93306-5",
+            "language": "de",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-3-322-93306-5"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-3-322-93306-5"
+                }
+            ],
+            "creators": [],
+            "bookEditors": [
+                {
+                    "bookEditor": "Dangschat, Jens S."
+                }
+            ],
+            "publicationName": "Modernisierte Stadt — gespaltene Gesellschaft",
+            "openaccess": "false",
+            "doi": "10.1007/978-3-322-93306-5",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-3-322-93307-2",
+            "electronicIsbn": "978-3-322-93306-5",
+            "isbn": "978-3-322-93307-2",
+            "genre": "Monograph",
+            "copyright": "©1999 VS Verlag für Sozialwissenschaften | Springer Fachmedien Wiesbaden GmbH, Wiesbaden",
+            "abstract": "",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-3-642-46881-0",
+            "language": "de",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-3-642-46881-0"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-3-642-46881-0"
+                }
+            ],
+            "creators": [],
+            "bookEditors": [
+                {
+                    "bookEditor": "Möhr, Wiebke"
+                },
+                {
+                    "bookEditor": "Schmidt, Ingrid"
+                }
+            ],
+            "publicationName": "SGML und XML",
+            "openaccess": "false",
+            "doi": "10.1007/978-3-642-46881-0",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-3-540-65543-5",
+            "electronicIsbn": "978-3-642-46881-0",
+            "isbn": "978-3-540-65543-5",
+            "genre": "Professional book",
+            "copyright": "©1999 Springer-Verlag Berlin Heidelberg",
+            "abstract": "",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-94-017-3006-8",
+            "language": "en",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-94-017-3006-8"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-94-017-3006-8"
+                }
+            ],
+            "creators": [
+                {
+                    "creator": "Sinnige, Th. G."
+                }
+            ],
+            "bookEditors": [],
+            "publicationName": "Six Lectures on Plotinus and Gnosticism",
+            "openaccess": "false",
+            "doi": "10.1007/978-94-017-3006-8",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-90-481-5193-6",
+            "electronicIsbn": "978-94-017-3006-8",
+            "isbn": "978-90-481-5193-6",
+            "genre": "Contributed volume",
+            "copyright": "©1999 Springer Science+Business Media B.V.",
+            "abstract": "",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-3-86226-863-4",
+            "language": "de",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-3-86226-863-4"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-3-86226-863-4"
+                }
+            ],
+            "creators": [
+                {
+                    "creator": "Kesting, Stefan"
+                }
+            ],
+            "bookEditors": [],
+            "publicationName": "Diskurs und Macht",
+            "openaccess": "false",
+            "doi": "10.1007/978-3-86226-863-4",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-3-89085-946-0",
+            "electronicIsbn": "978-3-86226-863-4",
+            "isbn": "978-3-89085-946-0",
+            "genre": "Monograph",
+            "copyright": "©1999 Centaurus Verlag & Media UG",
+            "abstract": "",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-3-663-08222-4",
+            "language": "de",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-3-663-08222-4"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-3-663-08222-4"
+                }
+            ],
+            "creators": [
+                {
+                    "creator": "Reiche, Dirk"
+                }
+            ],
+            "bookEditors": [],
+            "publicationName": "Privatisierung der internationalen Verkehrsflughäfen in Deutschland",
+            "openaccess": "false",
+            "doi": "10.1007/978-3-663-08222-4",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-3-8244-0455-1",
+            "electronicIsbn": "978-3-663-08222-4",
+            "isbn": "978-3-8244-0455-1",
+            "genre": "Ph.D. Thesis",
+            "copyright": "©1999 Gabler Verlag | Springer Fachmedien Wiesbaden GmbH, Wiesbaden",
+            "abstract": "",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-1-349-14567-6",
+            "language": "en",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-1-349-14567-6"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-1-349-14567-6"
+                }
+            ],
+            "creators": [
+                {
+                    "creator": "Hanmer, Jalna"
+                },
+                {
+                    "creator": "Statham, Daphne"
+                }
+            ],
+            "bookEditors": [],
+            "publicationName": "Women and Social Work",
+            "openaccess": "false",
+            "doi": "10.1007/978-1-349-14567-6",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-0-333-69963-8",
+            "electronicIsbn": "978-1-349-14567-6",
+            "isbn": "978-0-333-69963-8",
+            "genre": "Undergraduate textbook",
+            "copyright": "©1999 Macmillan Publishers Limited",
+            "abstract": "",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/BFb0109583",
+            "language": "en",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/BFb0109583"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/BFb0109583"
+                }
+            ],
+            "creators": [
+                {
+                    "creator": "Kulisch, Wilhelm A. M."
+                }
+            ],
+            "bookEditors": [],
+            "publicationName": "Deposition of diamond-like superhard materials",
+            "openaccess": "false",
+            "doi": "10.1007/BFb0109583",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-3-540-65629-6",
+            "electronicIsbn": "978-3-540-49165-1",
+            "isbn": "978-3-540-65629-6",
+            "genre": "Monograph",
+            "copyright": "©1999 Springer-Verlag Berlin Heidelberg",
+            "abstract": "",
+            "conferenceInfo": [],
+            "ePubUrl": "https://link.springer.com/download/epub/10.1007/BFb0109583.epub"
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-90-313-7414-4",
+            "language": "nl",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-90-313-7414-4"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-90-313-7414-4"
+                }
+            ],
+            "creators": [
+                {
+                    "creator": "Hillen, J.G."
+                }
+            ],
+            "bookEditors": [],
+            "publicationName": "Werkboek lichamelijk functioneren en bijbehorende gezondheidsproblematiek",
+            "openaccess": "false",
+            "doi": "10.1007/978-90-313-7414-4",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-90-313-2890-1",
+            "electronicIsbn": "978-90-313-7414-4",
+            "isbn": "978-90-313-2890-1",
+            "genre": "Highschool textbook",
+            "copyright": "©1999 Bohn Stafleu van Loghum",
+            "abstract": "",
+            "conferenceInfo": [],
+            "ePubUrl": "https://link.springer.com/download/epub/10.1007/978-90-313-7414-4.epub"
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-1-349-27317-1",
+            "language": "en",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-1-349-27317-1"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-1-349-27317-1"
+                }
+            ],
+            "creators": [],
+            "bookEditors": [
+                {
+                    "bookEditor": "Hocking, Brian"
+                }
+            ],
+            "publicationName": "Foreign Ministries",
+            "openaccess": "false",
+            "doi": "10.1007/978-1-349-27317-1",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-0-333-69243-1",
+            "electronicIsbn": "978-1-349-27317-1",
+            "isbn": "978-0-333-69243-1",
+            "genre": "Monograph",
+            "copyright": "©1999 Palgrave Macmillan, a division of Macmillan Publishers Limited",
+            "abstract": "",
+            "conferenceInfo": [],
+            "ePubUrl": "https://link.springer.com/download/epub/10.1007/978-1-349-27317-1.epub"
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-3-663-01477-5",
+            "language": "de",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-3-663-01477-5"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-3-663-01477-5"
+                }
+            ],
+            "creators": [
+                {
+                    "creator": "Tessin, Peter"
+                }
+            ],
+            "bookEditors": [],
+            "publicationName": "Die Risikostruktur von Industrieanleihen",
+            "openaccess": "false",
+            "doi": "10.1007/978-3-663-01477-5",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-3-8244-6948-2",
+            "electronicIsbn": "978-3-663-01477-5",
+            "isbn": "978-3-8244-6948-2",
+            "genre": "Ph.D. Thesis",
+            "copyright": "©1999 Gabler Verlag | Springer Fachmedien Wiesbaden GmbH, Wiesbaden",
+            "abstract": "",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-3-322-93329-4",
+            "language": "de",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-3-322-93329-4"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-3-322-93329-4"
+                }
+            ],
+            "creators": [
+                {
+                    "creator": "Kowalsky, Wolfgang"
+                }
+            ],
+            "bookEditors": [],
+            "publicationName": "Europäische Sozialpolitik",
+            "openaccess": "false",
+            "doi": "10.1007/978-3-322-93329-4",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-3-8100-2325-4",
+            "electronicIsbn": "978-3-322-93329-4",
+            "isbn": "978-3-8100-2325-4",
+            "genre": "Monograph",
+            "copyright": "©1999 VS Verlag für Sozialwissenschaften | Springer Fachmedien Wiesbaden GmbH, Wiesbaden",
+            "abstract": "",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-3-322-81259-9",
+            "language": "de",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-3-322-81259-9"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-3-322-81259-9"
+                }
+            ],
+            "creators": [
+                {
+                    "creator": "Unterseher, Lutz"
+                }
+            ],
+            "bookEditors": [],
+            "publicationName": "Defensive ohne Alternative",
+            "openaccess": "false",
+            "doi": "10.1007/978-3-322-81259-9",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-3-8244-4351-2",
+            "electronicIsbn": "978-3-322-81259-9",
+            "isbn": "978-3-8244-4351-2",
+            "genre": "Monograph",
+            "copyright": "©1999 VS Verlag für Sozialwissenschaften | Springer Fachmedien Wiesbaden GmbH, Wiesbaden",
+            "abstract": "",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-1-349-27550-2",
+            "language": "en",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-1-349-27550-2"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-1-349-27550-2"
+                }
+            ],
+            "creators": [
+                {
+                    "creator": "Devine, Fiona"
+                },
+                {
+                    "creator": "Heath, Sue"
+                }
+            ],
+            "bookEditors": [],
+            "publicationName": "Sociological Research Methods in Context",
+            "openaccess": "false",
+            "doi": "10.1007/978-1-349-27550-2",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-0-333-66632-6",
+            "electronicIsbn": "978-1-349-27550-2",
+            "isbn": "978-0-333-66632-6",
+            "genre": "Undergraduate textbook",
+            "copyright": "©1999 Macmillan Publishers Limited",
+            "abstract": "",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-3-322-85119-2",
+            "language": "de",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-3-322-85119-2"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-3-322-85119-2"
+                }
+            ],
+            "creators": [
+                {
+                    "creator": "Fuchs, Max"
+                }
+            ],
+            "bookEditors": [],
+            "publicationName": "Mensch und Kultur",
+            "openaccess": "false",
+            "doi": "10.1007/978-3-322-85119-2",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-3-531-13299-0",
+            "electronicIsbn": "978-3-322-85119-2",
+            "isbn": "978-3-531-13299-0",
+            "genre": "Ph.D. Thesis",
+            "copyright": "©1999 VS Verlag für Sozialwissenschaften | Springer Fachmedien Wiesbaden GmbH, Wiesbaden",
+            "abstract": "",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-1-349-27627-1",
+            "language": "en",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-1-349-27627-1"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-1-349-27627-1"
+                }
+            ],
+            "creators": [],
+            "bookEditors": [
+                {
+                    "bookEditor": "Brehony, Kevin J."
+                },
+                {
+                    "bookEditor": "Rassool, Naz"
+                }
+            ],
+            "publicationName": "Nationalisms Old and New",
+            "openaccess": "false",
+            "doi": "10.1007/978-1-349-27627-1",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-0-333-71772-1",
+            "electronicIsbn": "978-1-349-27627-1",
+            "isbn": "978-0-333-71772-1",
+            "genre": "Monograph",
+            "copyright": "©1999 British Sociological Association",
+            "abstract": "",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-3-322-96910-1",
+            "language": "de",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-3-322-96910-1"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-3-322-96910-1"
+                }
+            ],
+            "creators": [
+                {
+                    "creator": "Steinweg, Carl"
+                }
+            ],
+            "bookEditors": [
+                {
+                    "bookEditor": "Fedtke, Stephen"
+                }
+            ],
+            "publicationName": "Projektkompass Softwareentwicklung",
+            "openaccess": "false",
+            "doi": "10.1007/978-3-322-96910-1",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-3-322-96911-8",
+            "electronicIsbn": "978-3-322-96910-1",
+            "isbn": "978-3-322-96911-8",
+            "genre": "German textbook",
+            "copyright": "©1999 Vieweg+Teubner Verlag | Springer Fachmedien Wiesbaden GmbH, Wiesbaden",
+            "abstract": "",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-3-322-99495-0",
+            "language": "de",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-3-322-99495-0"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-3-322-99495-0"
+                }
+            ],
+            "creators": [
+                {
+                    "creator": "Schnauffer, Rainer"
+                }
+            ],
+            "bookEditors": [],
+            "publicationName": "Internationale Kommunikationspolitik für Investitionsgüter",
+            "openaccess": "false",
+            "doi": "10.1007/978-3-322-99495-0",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-3-8244-6833-1",
+            "electronicIsbn": "978-3-322-99495-0",
+            "isbn": "978-3-8244-6833-1",
+            "genre": "Ph.D. Thesis",
+            "copyright": "©1999 Gabler Verlag | Springer Fachmedien Wiesbaden GmbH, Wiesbaden",
+            "abstract": "",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-3-322-84595-5",
+            "language": "de",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-3-322-84595-5"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-3-322-84595-5"
+                }
+            ],
+            "creators": [
+                {
+                    "creator": "Bonart, Thomas"
+                }
+            ],
+            "bookEditors": [],
+            "publicationName": "Industrieller Vertrieb",
+            "openaccess": "false",
+            "doi": "10.1007/978-3-322-84595-5",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-3-409-13638-9",
+            "electronicIsbn": "978-3-322-84595-5",
+            "isbn": "978-3-409-13638-9",
+            "genre": "German textbook",
+            "copyright": "©1999 Gabler Verlag | Springer Fachmedien Wiesbaden GmbH, Wiesbaden",
+            "abstract": "",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-3-322-85124-6",
+            "language": "de",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-3-322-85124-6"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-3-322-85124-6"
+                }
+            ],
+            "creators": [
+                {
+                    "creator": "Merten, Klaus"
+                }
+            ],
+            "bookEditors": [],
+            "publicationName": "Gewalt durch Gewalt im Fernsehen?",
+            "openaccess": "false",
+            "doi": "10.1007/978-3-322-85124-6",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-3-531-13397-3",
+            "electronicIsbn": "978-3-322-85124-6",
+            "isbn": "978-3-531-13397-3",
+            "genre": "Monograph",
+            "copyright": "©1999 VS Verlag für Sozialwissenschaften | Springer Fachmedien Wiesbaden GmbH, Wiesbaden",
+            "abstract": "",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-3-663-10700-2",
+            "language": "de",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-3-663-10700-2"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-3-663-10700-2"
+                }
+            ],
+            "creators": [
+                {
+                    "creator": "Jansen, Irmgard"
+                }
+            ],
+            "bookEditors": [],
+            "publicationName": "Mädchen in Haft",
+            "openaccess": "false",
+            "doi": "10.1007/978-3-663-10700-2",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-3-8100-2287-5",
+            "electronicIsbn": "978-3-663-10700-2",
+            "isbn": "978-3-8100-2287-5",
+            "genre": "Monograph",
+            "copyright": "©1999 VS Verlag für Sozialwissenschaften | Springer Fachmedien Wiesbaden GmbH, Wiesbaden",
+            "abstract": "",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-3-662-10212-1",
+            "language": "de",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-3-662-10212-1"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-3-662-10212-1"
+                }
+            ],
+            "creators": [
+                {
+                    "creator": "Stux, Gabriel"
+                }
+            ],
+            "bookEditors": [],
+            "publicationName": "Tafeln und Selektor der Akupunktur",
+            "openaccess": "false",
+            "doi": "10.1007/978-3-662-10212-1",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-3-662-10213-8",
+            "electronicIsbn": "978-3-662-10212-1",
+            "isbn": "978-3-662-10213-8",
+            "genre": "Professional book",
+            "copyright": "©1999 Springer-Verlag Berlin Heidelberg",
+            "abstract": "",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-3-322-85195-6",
+            "language": "de",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-3-322-85195-6"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-3-322-85195-6"
+                }
+            ],
+            "creators": [
+                {
+                    "creator": "Mayer, Jörg H."
+                }
+            ],
+            "bookEditors": [],
+            "publicationName": "Führungsinformationssysteme für die internationale Management-Holding",
+            "openaccess": "false",
+            "doi": "10.1007/978-3-322-85195-6",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-3-8244-7077-8",
+            "electronicIsbn": "978-3-322-85195-6",
+            "isbn": "978-3-8244-7077-8",
+            "genre": "Monograph",
+            "copyright": "©1999 Gabler Verlag | Springer Fachmedien Wiesbaden GmbH, Wiesbaden",
+            "abstract": "",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-3-322-83320-4",
+            "language": "de",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-3-322-83320-4"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-3-322-83320-4"
+                }
+            ],
+            "creators": [
+                {
+                    "creator": "Bergmann, Kristin"
+                }
+            ],
+            "bookEditors": [],
+            "publicationName": "Die Gleichstellung von Frauen und Männern in der europäischen Arbeitswelt",
+            "openaccess": "false",
+            "doi": "10.1007/978-3-322-83320-4",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-3-531-13252-5",
+            "electronicIsbn": "978-3-322-83320-4",
+            "isbn": "978-3-531-13252-5",
+            "genre": "Monograph",
+            "copyright": "©1999 VS Verlag für Sozialwissenschaften | Springer Fachmedien Wiesbaden GmbH, Wiesbaden",
+            "abstract": "",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-3-322-95118-2",
+            "language": "de",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-3-322-95118-2"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-3-322-95118-2"
+                }
+            ],
+            "creators": [
+                {
+                    "creator": "Butterwegge, Christoph"
+                }
+            ],
+            "bookEditors": [],
+            "publicationName": "Wohlfahrtsstaat im Wandel",
+            "openaccess": "false",
+            "doi": "10.1007/978-3-322-95118-2",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-3-322-95119-9",
+            "electronicIsbn": "978-3-322-95118-2",
+            "isbn": "978-3-322-95119-9",
+            "genre": "Monograph",
+            "copyright": "©1999 VS Verlag für Sozialwissenschaften | Springer Fachmedien Wiesbaden GmbH, Wiesbaden",
+            "abstract": "",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-3-476-03732-9",
+            "language": "de",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-3-476-03732-9"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-3-476-03732-9"
+                }
+            ],
+            "creators": [],
+            "bookEditors": [
+                {
+                    "bookEditor": "Jeßing, Benedikt"
+                },
+                {
+                    "bookEditor": "Lutz, Bernd"
+                },
+                {
+                    "bookEditor": "Wild, Inge"
+                }
+            ],
+            "publicationName": "Metzler Goethe Lexikon",
+            "openaccess": "false",
+            "doi": "10.1007/978-3-476-03732-9",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-3-476-01589-1",
+            "electronicIsbn": "978-3-476-03732-9",
+            "isbn": "978-3-476-01589-1",
+            "genre": "Encyclop(a)edia",
+            "copyright": "©1999 Springer-Verlag Berlin Heidelberg",
+            "abstract": "Das Metzler Goethe Lexikon gibt in mehreren tausend Artikeln Antworten auf alle Fragen zu Goethes Lebensalltag, zu seinem Freundeskreis, seinen Reisen und Bekanntschaften, seinem schriftstellerischen und wissenschaftlichen Werk, seiner Nachwirkung bis heute: Alles über Goethe!",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-3-663-07713-8",
+            "language": "de",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-3-663-07713-8"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-3-663-07713-8"
+                }
+            ],
+            "creators": [
+                {
+                    "creator": "Herschbach, Peter"
+                }
+            ],
+            "bookEditors": [],
+            "publicationName": "Gesundheitsverhalten",
+            "openaccess": "false",
+            "doi": "10.1007/978-3-663-07713-8",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-3-531-13374-4",
+            "electronicIsbn": "978-3-663-07713-8",
+            "isbn": "978-3-531-13374-4",
+            "genre": "Ph.D. Thesis",
+            "copyright": "©1999 VS Verlag für Sozialwissenschaften | Springer Fachmedien Wiesbaden GmbH, Wiesbaden",
+            "abstract": "",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-1-349-27523-6",
+            "language": "en",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-1-349-27523-6"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-1-349-27523-6"
+                }
+            ],
+            "creators": [
+                {
+                    "creator": "Salvadó, Francisco J. Romero"
+                }
+            ],
+            "bookEditors": [],
+            "publicationName": "Twentieth-Century Spain",
+            "openaccess": "false",
+            "doi": "10.1007/978-1-349-27523-6",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-0-333-63697-8",
+            "electronicIsbn": "978-1-349-27523-6",
+            "isbn": "978-0-333-63697-8",
+            "genre": "Undergraduate textbook",
+            "copyright": "©1999 Macmillan Publishers Limited",
+            "abstract": "",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-3-322-86643-1",
+            "language": "de",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-3-322-86643-1"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-3-322-86643-1"
+                }
+            ],
+            "creators": [
+                {
+                    "creator": "Konietzka, Dirk"
+                }
+            ],
+            "bookEditors": [],
+            "publicationName": "Ausbildung und Beruf",
+            "openaccess": "false",
+            "doi": "10.1007/978-3-322-86643-1",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-3-531-13253-2",
+            "electronicIsbn": "978-3-322-86643-1",
+            "isbn": "978-3-531-13253-2",
+            "genre": "Ph.D. Thesis",
+            "copyright": "©1999 VS Verlag für Sozialwissenschaften | Springer Fachmedien Wiesbaden GmbH, Wiesbaden",
+            "abstract": "",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-3-322-93491-8",
+            "language": "de",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-3-322-93491-8"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-3-322-93491-8"
+                }
+            ],
+            "creators": [
+                {
+                    "creator": "Schenker-Wicki, Andrea"
+                }
+            ],
+            "bookEditors": [],
+            "publicationName": "Moderne Prüfverfahren für komplexe Probleme",
+            "openaccess": "false",
+            "doi": "10.1007/978-3-322-93491-8",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-3-8244-0454-4",
+            "electronicIsbn": "978-3-322-93491-8",
+            "isbn": "978-3-8244-0454-4",
+            "genre": "Monograph",
+            "copyright": "©1999 Deutscher Universitäts-Verlag | Springer Fachmedien Wiesbaden GmbH, Wiesbaden",
+            "abstract": "",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-3-663-10697-5",
+            "language": "de",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-3-663-10697-5"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-3-663-10697-5"
+                }
+            ],
+            "creators": [
+                {
+                    "creator": "Kranenpohl, Uwe"
+                }
+            ],
+            "bookEditors": [],
+            "publicationName": "Mächtig oder machtlos?",
+            "openaccess": "false",
+            "doi": "10.1007/978-3-663-10697-5",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-3-531-13265-5",
+            "electronicIsbn": "978-3-663-10697-5",
+            "isbn": "978-3-531-13265-5",
+            "genre": "Ph.D. Thesis",
+            "copyright": "©1999 VS Verlag für Sozialwissenschaften | Springer Fachmedien Wiesbaden GmbH, Wiesbaden",
+            "abstract": "",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-3-663-08167-8",
+            "language": "de",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-3-663-08167-8"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-3-663-08167-8"
+                }
+            ],
+            "creators": [
+                {
+                    "creator": "Nöthel, Till"
+                }
+            ],
+            "bookEditors": [],
+            "publicationName": "Szenen-Marketing und Produkt-Positionierung",
+            "openaccess": "false",
+            "doi": "10.1007/978-3-663-08167-8",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-3-8244-0417-9",
+            "electronicIsbn": "978-3-663-08167-8",
+            "isbn": "978-3-8244-0417-9",
+            "genre": "Monograph",
+            "copyright": "©1999 Deutscher Universitäts-Verlag | Springer Fachmedien Wiesbaden GmbH, Wiesbaden",
+            "abstract": "",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-1-4615-4147-9",
+            "language": "en",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-1-4615-4147-9"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-1-4615-4147-9"
+                }
+            ],
+            "creators": [],
+            "bookEditors": [
+                {
+                    "bookEditor": "Guimón, José"
+                },
+                {
+                    "bookEditor": "Sartorius, Norman"
+                }
+            ],
+            "publicationName": "Manage or Perish?",
+            "openaccess": "false",
+            "doi": "10.1007/978-1-4615-4147-9",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-1-4613-6860-1",
+            "electronicIsbn": "978-1-4615-4147-9",
+            "isbn": "978-1-4613-6860-1",
+            "genre": "Contributed volume",
+            "copyright": "©1999 Springer Science+Business Media New York",
+            "abstract": "",
+            "conferenceInfo": [],
+            "ePubUrl": "https://link.springer.com/download/epub/10.1007/978-1-4615-4147-9.epub"
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-1-4615-4707-5",
+            "language": "en",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-1-4615-4707-5"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-1-4615-4707-5"
+                }
+            ],
+            "creators": [],
+            "bookEditors": [
+                {
+                    "bookEditor": "Setlow, Jane K."
+                }
+            ],
+            "publicationName": "Genetic Engineering",
+            "openaccess": "false",
+            "doi": "10.1007/978-1-4615-4707-5",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-1-4613-7132-8",
+            "electronicIsbn": "978-1-4615-4707-5",
+            "isbn": "978-1-4613-7132-8",
+            "genre": "Contributed volume",
+            "copyright": "©1999 Kluwer Academic/Plenum Publishers",
+            "abstract": "",
+            "conferenceInfo": [],
+            "ePubUrl": "https://link.springer.com/download/epub/10.1007/978-1-4615-4707-5.epub"
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-3-663-09697-9",
+            "language": "de",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-3-663-09697-9"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-3-663-09697-9"
+                }
+            ],
+            "creators": [],
+            "bookEditors": [
+                {
+                    "bookEditor": "Nitschke, Peter"
+                }
+            ],
+            "publicationName": "Die Europäische Union der Regionen",
+            "openaccess": "false",
+            "doi": "10.1007/978-3-663-09697-9",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-3-8100-2115-1",
+            "electronicIsbn": "978-3-663-09697-9",
+            "isbn": "978-3-8100-2115-1",
+            "genre": "Monograph",
+            "copyright": "©1999 VS Verlag für Sozialwissenschaften | Springer Fachmedien Wiesbaden GmbH, Wiesbaden",
+            "abstract": "",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/BFb0109548",
+            "language": "en",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/BFb0109548"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/BFb0109548"
+                }
+            ],
+            "creators": [
+                {
+                    "creator": "Braun, Wolfgang"
+                }
+            ],
+            "bookEditors": [],
+            "publicationName": "Applied RHEED",
+            "openaccess": "false",
+            "doi": "10.1007/BFb0109548",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-3-540-65199-4",
+            "electronicIsbn": "978-3-540-49485-0",
+            "isbn": "978-3-540-65199-4",
+            "genre": "Monograph",
+            "copyright": "©1999 Springer-Verlag",
+            "abstract": "",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-3-663-08420-4",
+            "language": "de",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-3-663-08420-4"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-3-663-08420-4"
+                }
+            ],
+            "creators": [
+                {
+                    "creator": "Weiland, Christiane"
+                }
+            ],
+            "bookEditors": [],
+            "publicationName": "Die Wirkung bankaufsichtlicher Eigenkapitalanforderungen",
+            "openaccess": "false",
+            "doi": "10.1007/978-3-663-08420-4",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-3-8244-9020-2",
+            "electronicIsbn": "978-3-663-08420-4",
+            "isbn": "978-3-8244-9020-2",
+            "genre": "German textbook",
+            "copyright": "©1999 Gabler Verlag | Springer Fachmedien Wiesbaden GmbH, Wiesbaden",
+            "abstract": "",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-3-322-92119-2",
+            "language": "de",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-3-322-92119-2"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-3-322-92119-2"
+                }
+            ],
+            "creators": [
+                {
+                    "creator": "Schäfer, Wolfgang"
+                },
+                {
+                    "creator": "Georgi, Kurt"
+                },
+                {
+                    "creator": "Trippler, Gisela"
+                }
+            ],
+            "bookEditors": [],
+            "publicationName": "Mathematik-Vorkurs",
+            "openaccess": "false",
+            "doi": "10.1007/978-3-322-92119-2",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-3-519-00249-9",
+            "electronicIsbn": "978-3-322-92119-2",
+            "isbn": "978-3-519-00249-9",
+            "genre": "German textbook",
+            "copyright": "©1999 Vieweg+Teubner Verlag | Springer Fachmedien Wiesbaden GmbH, Wiesbaden",
+            "abstract": "",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-3-7091-6802-8",
+            "language": "de",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-3-7091-6802-8"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-3-7091-6802-8"
+                }
+            ],
+            "creators": [
+                {
+                    "creator": "Melezinek, Adolf"
+                }
+            ],
+            "bookEditors": [],
+            "publicationName": "Ingenieurpädagogik",
+            "openaccess": "false",
+            "doi": "10.1007/978-3-7091-6802-8",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-3-211-83305-6",
+            "electronicIsbn": "978-3-7091-6802-8",
+            "isbn": "978-3-211-83305-6",
+            "genre": "Undergraduate textbook",
+            "copyright": "©1999 Springer-Verlag Vienna",
+            "abstract": "",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-3-476-03328-4",
+            "language": "de",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-3-476-03328-4"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-3-476-03328-4"
+                }
+            ],
+            "creators": [],
+            "bookEditors": [
+                {
+                    "bookEditor": "Rölleke, Heinz"
+                }
+            ],
+            "publicationName": "Wiegen- und Kinderlieder",
+            "openaccess": "false",
+            "doi": "10.1007/978-3-476-03328-4",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-3-7400-1090-4",
+            "electronicIsbn": "978-3-476-03328-4",
+            "isbn": "978-3-7400-1090-4",
+            "genre": "Monograph",
+            "copyright": "©1999 Springer-Verlag Berlin Heidelberg",
+            "abstract": "Eine aufsehenerregende Trouvaille: Zum ersten Mal werden die von den Brüdern Grimm zwischen 1807 und 1830 gesammelten Wiegen- und Kinderlieder in einer umfassend kommentierten, mit zeitgenössischen Illustrationen ausgestatteten Ausgabe der Öffentlichkeit zugänglich gemacht.",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-3-663-10044-7",
+            "language": "de",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-3-663-10044-7"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-3-663-10044-7"
+                }
+            ],
+            "creators": [
+                {
+                    "creator": "Wieners, Tanja"
+                }
+            ],
+            "bookEditors": [],
+            "publicationName": "Familientypen und Formen außerfamilialer Kinderbetreuung heute",
+            "openaccess": "false",
+            "doi": "10.1007/978-3-663-10044-7",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-3-8100-2333-9",
+            "electronicIsbn": "978-3-663-10044-7",
+            "isbn": "978-3-8100-2333-9",
+            "genre": "Monograph",
+            "copyright": "©1999 VS Verlag für Sozialwissenschaften | Springer Fachmedien Wiesbaden GmbH, Wiesbaden",
+            "abstract": "",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-3-322-97803-5",
+            "language": "de",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-3-322-97803-5"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-3-322-97803-5"
+                }
+            ],
+            "creators": [
+                {
+                    "creator": "Roth, Stefan"
+                }
+            ],
+            "bookEditors": [],
+            "publicationName": "Positionierung und Interaktion",
+            "openaccess": "false",
+            "doi": "10.1007/978-3-322-97803-5",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-3-8244-7026-6",
+            "electronicIsbn": "978-3-322-97803-5",
+            "isbn": "978-3-8244-7026-6",
+            "genre": "German textbook",
+            "copyright": "©1999 Gabler Verlag | Springer Fachmedien Wiesbaden GmbH, Wiesbaden",
+            "abstract": "",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-3-322-98802-7",
+            "language": "de",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-3-322-98802-7"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-3-322-98802-7"
+                }
+            ],
+            "creators": [
+                {
+                    "creator": "Vogel, Claus"
+                }
+            ],
+            "bookEditors": [],
+            "publicationName": "Die Anfänge des westlichen Studiums der altindischen Lexikographie",
+            "openaccess": "false",
+            "doi": "10.1007/978-3-322-98802-7",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-3-322-98803-4",
+            "electronicIsbn": "978-3-322-98802-7",
+            "isbn": "978-3-322-98803-4",
+            "genre": "Monograph",
+            "copyright": "©1999 Springer Fachmedien Wiesbaden",
+            "abstract": "",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-94-015-9313-7",
+            "language": "en",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-94-015-9313-7"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-94-015-9313-7"
+                }
+            ],
+            "creators": [
+                {
+                    "creator": "Hintikka, Jaakko"
+                }
+            ],
+            "bookEditors": [],
+            "publicationName": "Inquiry as Inquiry: A Logic of Scientific Discovery",
+            "openaccess": "false",
+            "doi": "10.1007/978-94-015-9313-7",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-90-481-5139-4",
+            "electronicIsbn": "978-94-015-9313-7",
+            "isbn": "978-90-481-5139-4",
+            "genre": "Contributed volume",
+            "copyright": "©1999 Springer Science+Business Media B.V.",
+            "abstract": "",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-94-011-4802-3",
+            "language": "en",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-94-011-4802-3"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-94-011-4802-3"
+                }
+            ],
+            "creators": [],
+            "bookEditors": [
+                {
+                    "bookEditor": "Vasil, Indra K."
+                }
+            ],
+            "publicationName": "Molecular improvement of cereal crops",
+            "openaccess": "false",
+            "doi": "10.1007/978-94-011-4802-3",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-94-010-6016-5",
+            "electronicIsbn": "978-94-011-4802-3",
+            "isbn": "978-94-010-6016-5",
+            "genre": "Contributed volume",
+            "copyright": "©1999 Kluwer Academic Publishers",
+            "abstract": "",
+            "conferenceInfo": [],
+            "ePubUrl": "https://link.springer.com/download/epub/10.1007/978-94-011-4802-3.epub"
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-3-663-11409-3",
+            "language": "de",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-3-663-11409-3"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-3-663-11409-3"
+                }
+            ],
+            "creators": [
+                {
+                    "creator": "Schwenk, Otto G."
+                }
+            ],
+            "bookEditors": [],
+            "publicationName": "Soziale Lagen in der Bundesrepublik Deutschland",
+            "openaccess": "false",
+            "doi": "10.1007/978-3-663-11409-3",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-3-8100-2453-4",
+            "electronicIsbn": "978-3-663-11409-3",
+            "isbn": "978-3-8100-2453-4",
+            "genre": "Monograph",
+            "copyright": "©1999 VS Verlag für Sozialwissenschaften | Springer Fachmedien Wiesbaden GmbH, Wiesbaden",
+            "abstract": "",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-3-663-01485-0",
+            "language": "de",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-3-663-01485-0"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-3-663-01485-0"
+                }
+            ],
+            "creators": [
+                {
+                    "creator": "Dartsch, Andreas"
+                }
+            ],
+            "bookEditors": [],
+            "publicationName": "Implizite Volatilitäten am Aktien- und Optionsmarkt",
+            "openaccess": "false",
+            "doi": "10.1007/978-3-663-01485-0",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-3-8244-6926-0",
+            "electronicIsbn": "978-3-663-01485-0",
+            "isbn": "978-3-8244-6926-0",
+            "genre": "German textbook",
+            "copyright": "©1999 Gabler Verlag | Springer Fachmedien Wiesbaden GmbH, Wiesbaden",
+            "abstract": "",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-3-322-97802-8",
+            "language": "de",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-3-322-97802-8"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-3-322-97802-8"
+                }
+            ],
+            "creators": [
+                {
+                    "creator": "Geier, Christoph"
+                }
+            ],
+            "bookEditors": [],
+            "publicationName": "Optimierung der Informationstechnologie bei BPR-Projekten",
+            "openaccess": "false",
+            "doi": "10.1007/978-3-322-97802-8",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-3-8244-7006-8",
+            "electronicIsbn": "978-3-322-97802-8",
+            "isbn": "978-3-8244-7006-8",
+            "genre": "German textbook",
+            "copyright": "©1999 Gabler Verlag | Springer Fachmedien Wiesbaden GmbH, Wiesbaden",
+            "abstract": "",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-3-322-99874-3",
+            "language": "de",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-3-322-99874-3"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-3-322-99874-3"
+                }
+            ],
+            "creators": [
+                {
+                    "creator": "Prahl, Hans-Werner"
+                },
+                {
+                    "creator": "Setzwein, Monika"
+                }
+            ],
+            "bookEditors": [],
+            "publicationName": "Soziologie der Ernährung",
+            "openaccess": "false",
+            "doi": "10.1007/978-3-322-99874-3",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-3-8100-2005-5",
+            "electronicIsbn": "978-3-322-99874-3",
+            "isbn": "978-3-8100-2005-5",
+            "genre": "Monograph",
+            "copyright": "©1999 VS Verlag für Sozialwissenschaften | Springer Fachmedien Wiesbaden GmbH, Wiesbaden",
+            "abstract": "",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-94-011-4576-3",
+            "language": "de",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-94-011-4576-3"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-94-011-4576-3"
+                }
+            ],
+            "creators": [
+                {
+                    "creator": "Chrudzimski, Arkadiusz"
+                }
+            ],
+            "bookEditors": [],
+            "publicationName": "Die Erkenntnistheorie von Roman Ingarden",
+            "openaccess": "false",
+            "doi": "10.1007/978-94-011-4576-3",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-94-010-5937-4",
+            "electronicIsbn": "978-94-011-4576-3",
+            "isbn": "978-94-010-5937-4",
+            "genre": "Contributed volume",
+            "copyright": "©1999 Kluwer Academic Publishers",
+            "abstract": "",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-3-663-07847-0",
+            "language": "en",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-3-663-07847-0"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-3-663-07847-0"
+                }
+            ],
+            "creators": [
+                {
+                    "creator": "Plaisted, David A."
+                },
+                {
+                    "creator": "Zhu, Yunshan"
+                }
+            ],
+            "bookEditors": [],
+            "publicationName": "The Efficiency of Theorem Proving Strategies",
+            "openaccess": "false",
+            "doi": "10.1007/978-3-663-07847-0",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-3-528-15574-2",
+            "electronicIsbn": "978-3-663-07847-0",
+            "isbn": "978-3-528-15574-2",
+            "genre": "Professional book",
+            "copyright": "©1999 Vieweg+Teubner Verlag | Springer Fachmedien Wiesbaden GmbH, Wiesbaden",
+            "abstract": "",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-3-642-60215-3",
+            "language": "de",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-3-642-60215-3"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-3-642-60215-3"
+                }
+            ],
+            "creators": [
+                {
+                    "creator": "Fröhlich, Robert"
+                },
+                {
+                    "creator": "Baumgartner, Hubert"
+                }
+            ],
+            "bookEditors": [],
+            "publicationName": "40 Jahre SAMM",
+            "openaccess": "false",
+            "doi": "10.1007/978-3-642-60215-3",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-3-540-66031-6",
+            "electronicIsbn": "978-3-642-60215-3",
+            "isbn": "978-3-540-66031-6",
+            "genre": "Monograph",
+            "copyright": "©1999 Springer-Verlag Berlin Heidelberg",
+            "abstract": "",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-1-349-14473-0",
+            "language": "en",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-1-349-14473-0"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-1-349-14473-0"
+                }
+            ],
+            "creators": [
+                {
+                    "creator": "Johns, Robert"
+                },
+                {
+                    "creator": "Sedgwick, Andrew"
+                }
+            ],
+            "bookEditors": [],
+            "publicationName": "Law for Social Work Practice",
+            "openaccess": "false",
+            "doi": "10.1007/978-1-349-14473-0",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-0-333-69378-0",
+            "electronicIsbn": "978-1-349-14473-0",
+            "isbn": "978-0-333-69378-0",
+            "genre": "Undergraduate textbook",
+            "copyright": "©1999 Macmillan Publishers Limited",
+            "abstract": "",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-3-322-90320-4",
+            "language": "de",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-3-322-90320-4"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-3-322-90320-4"
+                }
+            ],
+            "creators": [],
+            "bookEditors": [
+                {
+                    "bookEditor": "Vetter, Klaus"
+                }
+            ],
+            "publicationName": "Kinder — zu welchem Preis?",
+            "openaccess": "false",
+            "doi": "10.1007/978-3-322-90320-4",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-3-531-13343-0",
+            "electronicIsbn": "978-3-322-90320-4",
+            "isbn": "978-3-531-13343-0",
+            "genre": "Ph.D. Thesis",
+            "copyright": "©1999 VS Verlag für Sozialwissenschaften | Springer Fachmedien Wiesbaden GmbH, Wiesbaden",
+            "abstract": "",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-1-349-27047-7",
+            "language": "en",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-1-349-27047-7"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-1-349-27047-7"
+                }
+            ],
+            "creators": [],
+            "bookEditors": [
+                {
+                    "bookEditor": "MacIver, Don"
+                }
+            ],
+            "publicationName": "The Politics of Multinational States",
+            "openaccess": "false",
+            "doi": "10.1007/978-1-349-27047-7",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-1-349-27049-1",
+            "electronicIsbn": "978-1-349-27047-7",
+            "isbn": "978-1-349-27049-1",
+            "genre": "Monograph",
+            "copyright": "©1999 Palgrave Macmillan, a division of Macmillan Publishers Limited",
+            "abstract": "",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book ConferencePaper",
+            "identifier": "doi:10.1007/3-540-48703-4",
+            "language": "en",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/3-540-48703-4"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/3-540-48703-4"
+                }
+            ],
+            "title": "Analytical Ultracentrifugation V",
+            "creators": [],
+            "bookEditors": [
+                {
+                    "bookEditor": "Cölfen, Helmut"
+                }
+            ],
+            "publicationName": "Analytical Ultracentrifugation V",
+            "openaccess": "false",
+            "doi": "10.1007/3-540-48703-4",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-3-540-66175-7",
+            "electronicIsbn": "978-3-540-48703-6",
+            "isbn": "978-3-540-66175-7",
+            "genre": "Proceedings",
+            "copyright": "©1999 Springer-Verlag Berlin Heidelberg",
+            "abstract": "",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-3-663-08192-0",
+            "language": "de",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-3-663-08192-0"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-3-663-08192-0"
+                }
+            ],
+            "creators": [
+                {
+                    "creator": "Siegler, Oliver"
+                }
+            ],
+            "bookEditors": [],
+            "publicationName": "Die dynamische Organisation",
+            "openaccess": "false",
+            "doi": "10.1007/978-3-663-08192-0",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-3-8244-0449-0",
+            "electronicIsbn": "978-3-663-08192-0",
+            "isbn": "978-3-8244-0449-0",
+            "genre": "German textbook",
+            "copyright": "©1999 Deutscher Universitäts-Verlag | Springer Fachmedien Wiesbaden GmbH, Wiesbaden",
+            "abstract": "",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-3-322-89809-8",
+            "language": "de",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-3-322-89809-8"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-3-322-89809-8"
+                }
+            ],
+            "creators": [],
+            "bookEditors": [
+                {
+                    "bookEditor": "Albach, Horst"
+                }
+            ],
+            "publicationName": "Innovation und Absatz",
+            "openaccess": "false",
+            "doi": "10.1007/978-3-322-89809-8",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-3-409-11455-4",
+            "electronicIsbn": "978-3-322-89809-8",
+            "isbn": "978-3-409-11455-4",
+            "genre": "Special Issue",
+            "copyright": "©1999 Gabler Verlag | Springer Fachmedien Wiesbaden GmbH, Wiesbaden",
+            "abstract": "",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book ConferencePaper",
+            "identifier": "doi:10.1007/978-3-642-60220-7",
+            "language": "en",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-3-642-60220-7"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-3-642-60220-7"
+                }
+            ],
+            "title": "Nisoldipine Coat-Core",
+            "creators": [],
+            "bookEditors": [
+                {
+                    "bookEditor": "Rousseau, Michel F."
+                }
+            ],
+            "publicationName": "Nisoldipine Coat-Core",
+            "openaccess": "false",
+            "doi": "10.1007/978-3-642-60220-7",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-3-540-66049-1",
+            "electronicIsbn": "978-3-642-60220-7",
+            "isbn": "978-3-540-66049-1",
+            "genre": "Proceedings",
+            "copyright": "©1999 Springer-Verlag Berlin Heidelberg",
+            "abstract": "",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-3-322-99611-4",
+            "language": "de",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-3-322-99611-4"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-3-322-99611-4"
+                }
+            ],
+            "creators": [
+                {
+                    "creator": "Köster, Dieter"
+                }
+            ],
+            "bookEditors": [],
+            "publicationName": "Wettbewerb in Netzproduktmärkten",
+            "openaccess": "false",
+            "doi": "10.1007/978-3-322-99611-4",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-3-8244-9014-1",
+            "electronicIsbn": "978-3-322-99611-4",
+            "isbn": "978-3-8244-9014-1",
+            "genre": "Monograph",
+            "copyright": "©1999 Gabler Verlag | Springer Fachmedien Wiesbaden GmbH, Wiesbaden",
+            "abstract": "",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-3-322-99787-6",
+            "language": "de",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-3-322-99787-6"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-3-322-99787-6"
+                }
+            ],
+            "creators": [],
+            "bookEditors": [
+                {
+                    "bookEditor": "Dürr, Tobias"
+                },
+                {
+                    "bookEditor": "Walter, Franz"
+                }
+            ],
+            "publicationName": "Solidargemeinschaft und fragmentierte Gesellschaft: Parteien, Milieus und Verbände im Vergleich",
+            "openaccess": "false",
+            "doi": "10.1007/978-3-322-99787-6",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-3-322-99788-3",
+            "electronicIsbn": "978-3-322-99787-6",
+            "isbn": "978-3-322-99788-3",
+            "genre": "Monograph",
+            "copyright": "©1999 VS Verlag für Sozialwissenschaften | Springer Fachmedien Wiesbaden GmbH, Wiesbaden",
+            "abstract": "",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-3-663-01468-3",
+            "language": "de",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-3-663-01468-3"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-3-663-01468-3"
+                }
+            ],
+            "creators": [],
+            "bookEditors": [
+                {
+                    "bookEditor": "Petzold, Hilarion"
+                },
+                {
+                    "bookEditor": "Märtens, Michael"
+                }
+            ],
+            "publicationName": "Wege zu effektiven Psychotherapien",
+            "openaccess": "false",
+            "doi": "10.1007/978-3-663-01468-3",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-3-8100-2335-3",
+            "electronicIsbn": "978-3-663-01468-3",
+            "isbn": "978-3-8100-2335-3",
+            "genre": "Monograph",
+            "copyright": "©1999 VS Verlag für Sozialwissenschaften | Springer Fachmedien Wiesbaden GmbH, Wiesbaden",
+            "abstract": "",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-3-322-92299-1",
+            "language": "de",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-3-322-92299-1"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-3-322-92299-1"
+                }
+            ],
+            "creators": [],
+            "bookEditors": [
+                {
+                    "bookEditor": "Leipert, Christian"
+                }
+            ],
+            "publicationName": "Aufwertung der Erziehungsarbeit",
+            "openaccess": "false",
+            "doi": "10.1007/978-3-322-92299-1",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-3-8100-2341-4",
+            "electronicIsbn": "978-3-322-92299-1",
+            "isbn": "978-3-8100-2341-4",
+            "genre": "Monograph",
+            "copyright": "©1999 VS Verlag für Sozialwissenschaften | Springer Fachmedien Wiesbaden GmbH, Wiesbaden",
+            "abstract": "",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-1-349-27743-8",
+            "language": "en",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-1-349-27743-8"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-1-349-27743-8"
+                }
+            ],
+            "creators": [
+                {
+                    "creator": "Bruley, Sue"
+                }
+            ],
+            "bookEditors": [],
+            "publicationName": "Women in Britain since 1900",
+            "openaccess": "false",
+            "doi": "10.1007/978-1-349-27743-8",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-0-333-61839-4",
+            "electronicIsbn": "978-1-349-27743-8",
+            "isbn": "978-0-333-61839-4",
+            "genre": "Undergraduate textbook",
+            "copyright": "©1999 Sue Bruley",
+            "abstract": "",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-3-322-80115-9",
+            "language": "de",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-3-322-80115-9"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-3-322-80115-9"
+                }
+            ],
+            "creators": [
+                {
+                    "creator": "Hering, Wilhelm T."
+                }
+            ],
+            "bookEditors": [],
+            "publicationName": "Angewandte Kernphysik",
+            "openaccess": "false",
+            "doi": "10.1007/978-3-322-80115-9",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-3-519-03244-1",
+            "electronicIsbn": "978-3-322-80115-9",
+            "isbn": "978-3-519-03244-1",
+            "genre": "German textbook",
+            "copyright": "©1999 Vieweg+Teubner Verlag | Springer Fachmedien Wiesbaden GmbH, Wiesbaden",
+            "abstract": "",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-3-663-08402-0",
+            "language": "de",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-3-663-08402-0"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-3-663-08402-0"
+                }
+            ],
+            "creators": [
+                {
+                    "creator": "Stork, Werner"
+                }
+            ],
+            "bookEditors": [],
+            "publicationName": "Die Organisation der betrieblichen Weiterbildung",
+            "openaccess": "false",
+            "doi": "10.1007/978-3-663-08402-0",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-3-8244-0467-4",
+            "electronicIsbn": "978-3-663-08402-0",
+            "isbn": "978-3-8244-0467-4",
+            "genre": "Monograph",
+            "copyright": "©1999 Deutscher Universitäts-Verlag | Springer Fachmedien Wiesbaden GmbH, Wiesbaden",
+            "abstract": "",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-3-642-95936-3",
+            "language": "de",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-3-642-95936-3"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-3-642-95936-3"
+                }
+            ],
+            "creators": [],
+            "bookEditors": [
+                {
+                    "bookEditor": "Pfeiffer, Friedhelm"
+                },
+                {
+                    "bookEditor": "Rennings, Klaus"
+                }
+            ],
+            "publicationName": "Beschäftigungswirkungen des Übergangs zu integrierter Umwelttechnik",
+            "openaccess": "false",
+            "doi": "10.1007/978-3-642-95936-3",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-3-7908-1181-0",
+            "electronicIsbn": "978-3-642-95936-3",
+            "isbn": "978-3-7908-1181-0",
+            "genre": "Monograph",
+            "copyright": "©1999 Physica-Verlag Heidelberg",
+            "abstract": "",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1057/9780230596818",
+            "language": "en",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1057/9780230596818"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1057/9780230596818"
+                }
+            ],
+            "creators": [
+                {
+                    "creator": "Ryrie, William"
+                }
+            ],
+            "bookEditors": [],
+            "publicationName": "First World, Third World",
+            "openaccess": "false",
+            "doi": "10.1057/9780230596818",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-0-333-75976-9",
+            "electronicIsbn": "978-0-230-59681-8",
+            "isbn": "978-0-333-75976-9",
+            "genre": "Monograph",
+            "copyright": "©1999 Palgrave Macmillan, a division of Macmillan Publishers Limited",
+            "abstract": "",
+            "conferenceInfo": [],
+            "ePubUrl": "https://link.springer.com/download/epub/10.1057/9780230596818.epub"
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-3-642-98009-1",
+            "language": "de",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-3-642-98009-1"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-3-642-98009-1"
+                }
+            ],
+            "creators": [],
+            "bookEditors": [
+                {
+                    "bookEditor": "Stief, C. G."
+                },
+                {
+                    "bookEditor": "Hartmann, U."
+                },
+                {
+                    "bookEditor": "Truß, M. C."
+                },
+                {
+                    "bookEditor": "Jonas, U."
+                }
+            ],
+            "publicationName": "Zeitgemäße Therapie der erektilen Dysfunktion",
+            "openaccess": "false",
+            "doi": "10.1007/978-3-642-98009-1",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-3-642-98010-7",
+            "electronicIsbn": "978-3-642-98009-1",
+            "isbn": "978-3-642-98010-7",
+            "genre": "Monograph",
+            "copyright": "©1999 Springer-Verlag Berlin Heidelberg",
+            "abstract": "",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-3-322-91282-4",
+            "language": "de",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-3-322-91282-4"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-3-322-91282-4"
+                }
+            ],
+            "creators": [
+                {
+                    "creator": "Weber, Jürgen"
+                },
+                {
+                    "creator": "Schäffer, Utz"
+                }
+            ],
+            "bookEditors": [],
+            "publicationName": "Balanced Scorecard & Controlling",
+            "openaccess": "false",
+            "doi": "10.1007/978-3-322-91282-4",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-3-322-91283-1",
+            "electronicIsbn": "978-3-322-91282-4",
+            "isbn": "978-3-322-91283-1",
+            "genre": "Professional book",
+            "copyright": "©1999 Gabler Verlag | Springer Fachmedien Wiesbaden GmbH, Wiesbaden",
+            "abstract": "",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-3-662-05985-2",
+            "language": "de",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-3-662-05985-2"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-3-662-05985-2"
+                }
+            ],
+            "creators": [
+                {
+                    "creator": "Weiß, Christel"
+                }
+            ],
+            "bookEditors": [],
+            "publicationName": "Basiswissen Medizinische Statistik",
+            "openaccess": "false",
+            "doi": "10.1007/978-3-662-05985-2",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-3-540-65121-5",
+            "electronicIsbn": "978-3-662-05985-2",
+            "isbn": "978-3-540-65121-5",
+            "genre": "German textbook",
+            "copyright": "©1999 Springer-Verlag Berlin Heidelberg",
+            "abstract": "",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-3-322-92439-1",
+            "language": "de",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-3-322-92439-1"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-3-322-92439-1"
+                }
+            ],
+            "creators": [
+                {
+                    "creator": "Opp, Karl-Dieter"
+                }
+            ],
+            "bookEditors": [],
+            "publicationName": "Methodologie der Sozialwissenschaften",
+            "openaccess": "false",
+            "doi": "10.1007/978-3-322-92439-1",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-3-531-32759-4",
+            "electronicIsbn": "978-3-322-92439-1",
+            "isbn": "978-3-531-32759-4",
+            "genre": "German textbook",
+            "copyright": "©1999 VS Verlag für Sozialwissenschaften | Springer Fachmedien Wiesbaden GmbH, Wiesbaden",
+            "abstract": "",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-3-642-58588-3",
+            "language": "de",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-3-642-58588-3"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-3-642-58588-3"
+                }
+            ],
+            "creators": [],
+            "bookEditors": [
+                {
+                    "bookEditor": "Nawroth, P. P."
+                }
+            ],
+            "publicationName": "Kompendium Diabetologie",
+            "openaccess": "false",
+            "doi": "10.1007/978-3-642-58588-3",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-3-540-64899-4",
+            "electronicIsbn": "978-3-642-58588-3",
+            "isbn": "978-3-540-64899-4",
+            "genre": "Monograph",
+            "copyright": "©1999 Springer-Verlag Berlin Heidelberg",
+            "abstract": "",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-1-349-14299-6",
+            "language": "en",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-1-349-14299-6"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-1-349-14299-6"
+                }
+            ],
+            "creators": [
+                {
+                    "creator": "Evans, Martin"
+                },
+                {
+                    "creator": "Moutinho, Luiz"
+                }
+            ],
+            "bookEditors": [],
+            "publicationName": "Contemporary Issues in Marketing",
+            "openaccess": "false",
+            "doi": "10.1007/978-1-349-14299-6",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-0-333-67774-2",
+            "electronicIsbn": "978-1-349-14299-6",
+            "isbn": "978-0-333-67774-2",
+            "genre": "Undergraduate textbook",
+            "copyright": "©1999 Macmillan Publishers Limited",
+            "abstract": "<em>Contemporary Issues in Marketing</em> provides an innovative approach to learning about key marketing concepts based on a collaboration with <em>Marketing Week</em>.<br><br>This book provides an overview of the main elements of marketing together with the key issues in contemporary marketing, explored through the reproduction of significant clippings from<em> Marketing Week</em>.  Questions on these clippings can be used as assignments and seminar topics, whilst answers and possible 'problem solving' approaches are suggested.",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book ConferencePaper",
+            "identifier": "doi:10.1007/978-94-011-4213-7",
+            "language": "en",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-94-011-4213-7"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-94-011-4213-7"
+                }
+            ],
+            "title": "Galaxy Evolution: Connecting the Distant Universe with the Local Fossil Record",
+            "creators": [],
+            "bookEditors": [
+                {
+                    "bookEditor": "Spite, M."
+                }
+            ],
+            "publicationName": "Galaxy Evolution: Connecting the Distant Universe with the Local Fossil Record",
+            "openaccess": "false",
+            "doi": "10.1007/978-94-011-4213-7",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-94-010-5831-5",
+            "electronicIsbn": "978-94-011-4213-7",
+            "isbn": "978-94-010-5831-5",
+            "genre": "Proceedings",
+            "copyright": "©1999 Kluwer Academic Publishers",
+            "abstract": "",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-1-4615-6835-3",
+            "language": "en",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-1-4615-6835-3"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-1-4615-6835-3"
+                }
+            ],
+            "creators": [
+                {
+                    "creator": "Igoe, Robert S."
+                },
+                {
+                    "creator": "Hui, Y. H."
+                }
+            ],
+            "bookEditors": [],
+            "publicationName": "Dictionary of Food and Ingredients",
+            "openaccess": "false",
+            "doi": "10.1007/978-1-4615-6835-3",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-1-4615-6837-7",
+            "electronicIsbn": "978-1-4615-6835-3",
+            "isbn": "978-1-4615-6837-7",
+            "genre": "Contributed volume",
+            "copyright": "©1999 Springer-Verlag US",
+            "abstract": "The Dictionary of Food Ingredients is a unique, easy-to-use source of infor­ mation on over 1,000 food ingredients. Like the previous editions, the new and updated Third Edition provides clear and concise information on currently used additives, including natural ingredients, FDA-approved artificial ingredients, and compounds used in food processing. The dictionary entries, organized in alphabetical order, include information on ingredient functions, chemical properties, and uses in food products. The updated and revised Third Edition contains approximately 150 new entries, and includes an updated and expanded bibliography. It also lists food ingredients ac­ cording to U. S. federal regulatory status. Users of the two previous editions have commented favorably on the dictionary's straightforward and clearly-written definitions, and we have endeavored to maintain that standard in this new edition. We trust it will continue to be a valuable reference for the food scientist, food processor, food product developer, nutritionist, extension specialist, and student. R. S. Igoe Y. H. Hui vii Ingredients A Acacia See Arabic. Acesulfame-K A non-nutritive sweetener, also termed acesulfame potas­ sium. It is a white, crystalline product that is 200 times sweeter than sucrose. It is not metabolized in the body. It is relatively stable as a powder and in liquids and solids which may be heated. Acesulfame-K is approved for use in dry food products. Acesulfame Potassium See Acesulfame-K.",
+            "conferenceInfo": [],
+            "ePubUrl": "https://link.springer.com/download/epub/10.1007/978-1-4615-6835-3.epub"
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-1-349-14540-9",
+            "language": "en",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-1-349-14540-9"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-1-349-14540-9"
+                }
+            ],
+            "creators": [],
+            "bookEditors": [
+                {
+                    "bookEditor": "Sertel, Murat R."
+                }
+            ],
+            "publicationName": "Contemporary Economic Issues",
+            "openaccess": "false",
+            "doi": "10.1007/978-1-349-14540-9",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-1-349-14542-3",
+            "electronicIsbn": "978-1-349-14540-9",
+            "isbn": "978-1-349-14542-3",
+            "genre": "Monograph",
+            "copyright": "©1999 Palgrave Macmillan, a division of Macmillan Publishers Limited",
+            "abstract": "",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book ConferencePaper",
+            "identifier": "doi:10.1007/978-3-0348-8675-8",
+            "language": "en",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-3-0348-8675-8"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-3-0348-8675-8"
+                }
+            ],
+            "title": "The Maz’ya Anniversary Collection",
+            "creators": [],
+            "bookEditors": [
+                {
+                    "bookEditor": "Rossmann, Jürgen"
+                },
+                {
+                    "bookEditor": "Takáč, Peter"
+                },
+                {
+                    "bookEditor": "Wildenhain, Günther"
+                }
+            ],
+            "publicationName": "The Maz’ya Anniversary Collection",
+            "openaccess": "false",
+            "doi": "10.1007/978-3-0348-8675-8",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-3-0348-9726-6",
+            "electronicIsbn": "978-3-0348-8675-8",
+            "isbn": "978-3-0348-9726-6",
+            "genre": "Proceedings",
+            "copyright": "©1999 Birkhäuser Verlag",
+            "abstract": "",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-3-0348-6362-9",
+            "language": "de",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-3-0348-6362-9"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-3-0348-6362-9"
+                }
+            ],
+            "creators": [
+                {
+                    "creator": "Schechter, Bruce"
+                }
+            ],
+            "bookEditors": [],
+            "publicationName": "Mein Geist ist offen",
+            "openaccess": "false",
+            "doi": "10.1007/978-3-0348-6362-9",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-3-7643-6083-2",
+            "electronicIsbn": "978-3-0348-6362-9",
+            "isbn": "978-3-7643-6083-2",
+            "genre": "Professional book",
+            "copyright": "©1999 Birkhäuser Basel",
+            "abstract": "",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-3-322-95201-1",
+            "language": "de",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-3-322-95201-1"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-3-322-95201-1"
+                }
+            ],
+            "creators": [],
+            "bookEditors": [
+                {
+                    "bookEditor": "Scharioth, Joachim"
+                }
+            ],
+            "publicationName": "Forschung und Handeln",
+            "openaccess": "false",
+            "doi": "10.1007/978-3-322-95201-1",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-3-8100-2324-7",
+            "electronicIsbn": "978-3-322-95201-1",
+            "isbn": "978-3-8100-2324-7",
+            "genre": "Monograph",
+            "copyright": "©1999 VS Verlag für Sozialwissenschaften | Springer Fachmedien Wiesbaden GmbH, Wiesbaden",
+            "abstract": "",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-1-349-14369-6",
+            "language": "en",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-1-349-14369-6"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-1-349-14369-6"
+                }
+            ],
+            "creators": [
+                {
+                    "creator": "O’Sullivan, Terence"
+                }
+            ],
+            "bookEditors": [],
+            "publicationName": "Decision Making in Social Work",
+            "openaccess": "false",
+            "doi": "10.1007/978-1-349-14369-6",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-0-333-68481-8",
+            "electronicIsbn": "978-1-349-14369-6",
+            "isbn": "978-0-333-68481-8",
+            "genre": "Undergraduate textbook",
+            "copyright": "©1999 Macmillan Publishers Limited",
+            "abstract": "",
+            "conferenceInfo": []
+        },
+        {
+            "contentType": "Book",
+            "identifier": "doi:10.1007/978-1-4615-5193-5",
+            "language": "en",
+            "url": [
+                {
+                    "format": "pdf",
+                    "platform": "web",
+                    "value": "http://link.springer.com/openurl/pdf?id=doi:10.1007/978-1-4615-5193-5"
+                },
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-1-4615-5193-5"
+                }
+            ],
+            "creators": [
+                {
+                    "creator": "Blejer, Mario I."
+                },
+                {
+                    "creator": "Škreb, Marko"
+                }
+            ],
+            "bookEditors": [],
+            "publicationName": "Central Banking, Monetary Policies, and the Implications for Transition Economies",
+            "openaccess": "false",
+            "doi": "10.1007/978-1-4615-5193-5",
+            "publisher": "Springer",
+            "publicationDate": "1999-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-1-4613-7365-0",
+            "electronicIsbn": "978-1-4615-5193-5",
+            "isbn": "978-1-4613-7365-0",
+            "genre": "Contributed volume",
+            "copyright": "©1999 Kluwer Academic Publishers",
+            "abstract": "",
+            "conferenceInfo": [],
+            "ePubUrl": "https://link.springer.com/download/epub/10.1007/978-1-4615-5193-5.epub"
+        }
+    ],
+    "facets": [
+        {
+            "name": "subject",
+            "values": [
+                {
+                    "value": "Engineering",
+                    "count": "34741"
+                },
+                {
+                    "value": "Medicine & Public Health",
+                    "count": "31708"
+                },
+                {
+                    "value": "Computer Science",
+                    "count": "31254"
+                },
+                {
+                    "value": "Business and Management",
+                    "count": "27017"
+                },
+                {
+                    "value": "Social Sciences",
+                    "count": "18228"
+                },
+                {
+                    "value": "Mathematics",
+                    "count": "17220"
+                },
+                {
+                    "value": "Life Sciences",
+                    "count": "14302"
+                },
+                {
+                    "value": "Physics",
+                    "count": "14133"
+                },
+                {
+                    "value": "Political Science and International Relations",
+                    "count": "11922"
+                },
+                {
+                    "value": "Economics",
+                    "count": "11153"
+                },
+                {
+                    "value": "Business and Management, general",
+                    "count": "9956"
+                },
+                {
+                    "value": "Artificial Intelligence (incl. Robotics)",
+                    "count": "9002"
+                },
+                {
+                    "value": "Chemistry",
+                    "count": "8954"
+                },
+                {
+                    "value": "Political Science",
+                    "count": "8423"
+                },
+                {
+                    "value": "Biomedicine",
+                    "count": "8416"
+                },
+                {
+                    "value": "Education",
+                    "count": "8397"
+                },
+                {
+                    "value": "Engineering, general",
+                    "count": "7943"
+                },
+                {
+                    "value": "Information Systems Applications (incl. Internet)",
+                    "count": "7388"
+                },
+                {
+                    "value": "Computer Communication Networks",
+                    "count": "7148"
+                },
+                {
+                    "value": "Philosophy",
+                    "count": "6681"
+                }
+            ]
+        },
+        {
+            "name": "keyword",
+            "values": [
+                {
+                    "value": "91B28",
+                    "count": "6"
+                },
+                {
+                    "value": "60Hxx",
+                    "count": "4"
+                },
+                {
+                    "value": "93E20",
+                    "count": "4"
+                },
+                {
+                    "value": "G13",
+                    "count": "4"
+                },
+                {
+                    "value": "H.4",
+                    "count": "4"
+                },
+                {
+                    "value": "14H20",
+                    "count": "3"
+                },
+                {
+                    "value": "35J20",
+                    "count": "3"
+                },
+                {
+                    "value": "35J25",
+                    "count": "3"
+                },
+                {
+                    "value": "35K57",
+                    "count": "3"
+                },
+                {
+                    "value": "60-01",
+                    "count": "3"
+                },
+                {
+                    "value": "60-06",
+                    "count": "3"
+                },
+                {
+                    "value": "60G17",
+                    "count": "3"
+                },
+                {
+                    "value": "60H10",
+                    "count": "3"
+                },
+                {
+                    "value": "65C20",
+                    "count": "3"
+                },
+                {
+                    "value": "65K05",
+                    "count": "3"
+                },
+                {
+                    "value": "68U20",
+                    "count": "3"
+                },
+                {
+                    "value": "J.1",
+                    "count": "3"
+                },
+                {
+                    "value": "11F55",
+                    "count": "2"
+                },
+                {
+                    "value": "13A18",
+                    "count": "2"
+                },
+                {
+                    "value": "14B05",
+                    "count": "2"
+                }
+            ]
+        },
+        {
+            "name": "pub",
+            "values": [
+                {
+                    "value": "The Statesman’s Year-Book",
+                    "count": "133"
+                },
+                {
+                    "value": "Reviews of Environmental Contamination and Toxicology",
+                    "count": "106"
+                },
+                {
+                    "value": "Ergebnisse der Inneren Medizin und Kinderheilkunde",
+                    "count": "76"
+                },
+                {
+                    "value": "Technische Mechanik",
+                    "count": "65"
+                },
+                {
+                    "value": "Neural Information Processing",
+                    "count": "59"
+                },
+                {
+                    "value": "Physik",
+                    "count": "59"
+                },
+                {
+                    "value": "Residue Reviews",
+                    "count": "57"
+                },
+                {
+                    "value": "Lineare Algebra",
+                    "count": "54"
+                },
+                {
+                    "value": "Ergebnisse der Chirurgie und Orthopädie",
+                    "count": "51"
+                },
+                {
+                    "value": "Thermodynamik",
+                    "count": "50"
+                },
+                {
+                    "value": "Database and Expert Systems Applications",
+                    "count": "49"
+                },
+                {
+                    "value": "Pattern Recognition",
+                    "count": "48"
+                },
+                {
+                    "value": "Fortschritte der Chemie organischer Naturstoffe / Progress in the Chemistry of Organic Natural Products",
+                    "count": "47"
+                },
+                {
+                    "value": "Marketing",
+                    "count": "46"
+                },
+                {
+                    "value": "Database Systems for Advanced Applications",
+                    "count": "44"
+                },
+                {
+                    "value": "Programming Languages and Systems",
+                    "count": "44"
+                },
+                {
+                    "value": "Algebra",
+                    "count": "43"
+                },
+                {
+                    "value": "Advances in Artificial Intelligence",
+                    "count": "42"
+                },
+                {
+                    "value": "Automata, Languages and Programming",
+                    "count": "41"
+                },
+                {
+                    "value": "Advances and Technical Standards in Neurosurgery",
+                    "count": "40"
+                }
+            ]
+        },
+        {
+            "name": "year",
+            "values": [
+                {
+                    "value": "2023",
+                    "count": "370"
+                },
+                {
+                    "value": "2022",
+                    "count": "10664"
+                },
+                {
+                    "value": "2021",
+                    "count": "13279"
+                },
+                {
+                    "value": "2020",
+                    "count": "14177"
+                },
+                {
+                    "value": "2019",
+                    "count": "13463"
+                },
+                {
+                    "value": "2018",
+                    "count": "13365"
+                },
+                {
+                    "value": "2017",
+                    "count": "12511"
+                },
+                {
+                    "value": "2016",
+                    "count": "12474"
+                },
+                {
+                    "value": "2015",
+                    "count": "11078"
+                },
+                {
+                    "value": "2014",
+                    "count": "10836"
+                },
+                {
+                    "value": "2013",
+                    "count": "10102"
+                },
+                {
+                    "value": "2012",
+                    "count": "8238"
+                },
+                {
+                    "value": "2011",
+                    "count": "7932"
+                },
+                {
+                    "value": "2010",
+                    "count": "7037"
+                },
+                {
+                    "value": "2009",
+                    "count": "7113"
+                },
+                {
+                    "value": "2008",
+                    "count": "6222"
+                },
+                {
+                    "value": "2007",
+                    "count": "5745"
+                },
+                {
+                    "value": "2006",
+                    "count": "5823"
+                },
+                {
+                    "value": "2005",
+                    "count": "5113"
+                },
+                {
+                    "value": "2004",
+                    "count": "4998"
+                }
+            ]
+        },
+        {
+            "name": "country",
+            "values": [
+                {
+                    "value": "Germany",
+                    "count": "48714"
+                },
+                {
+                    "value": "United States",
+                    "count": "23092"
+                },
+                {
+                    "value": "United Kingdom",
+                    "count": "12573"
+                },
+                {
+                    "value": "Switzerland",
+                    "count": "4483"
+                },
+                {
+                    "value": "Austria",
+                    "count": "4040"
+                },
+                {
+                    "value": "China",
+                    "count": "3711"
+                },
+                {
+                    "value": "Italy",
+                    "count": "3681"
+                },
+                {
+                    "value": "Australia",
+                    "count": "3658"
+                },
+                {
+                    "value": "Canada",
+                    "count": "3446"
+                },
+                {
+                    "value": "India",
+                    "count": "2948"
+                },
+                {
+                    "value": "France",
+                    "count": "2922"
+                },
+                {
+                    "value": "Netherlands",
+                    "count": "2784"
+                },
+                {
+                    "value": "Japan",
+                    "count": "2032"
+                },
+                {
+                    "value": "Russia",
+                    "count": "1897"
+                },
+                {
+                    "value": "Spain",
+                    "count": "1238"
+                },
+                {
+                    "value": "Sweden",
+                    "count": "1173"
+                },
+                {
+                    "value": "Poland",
+                    "count": "1088"
+                },
+                {
+                    "value": "Israel",
+                    "count": "1023"
+                },
+                {
+                    "value": "Belgium",
+                    "count": "1006"
+                },
+                {
+                    "value": "Denmark",
+                    "count": "771"
+                }
+            ]
+        },
+        {
+            "name": "type",
+            "values": [
+                {
+                    "value": "Book",
+                    "count": "302279"
+                }
+            ]
+        }
+    ]
+}
