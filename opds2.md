@@ -23,7 +23,7 @@
 * publisher (will need to get this from kbart)
 * publication date
 * subjects
-* series or collection NOTE: this is not in API, but we could get with some work from KBART file. do we want this?
+* series or collection NOTE: this is not in API, but we could get with some work from KBART file. do we want this? (answer: yes)
 
 
 
