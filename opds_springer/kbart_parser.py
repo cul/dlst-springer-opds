@@ -27,6 +27,9 @@ class KbartParser(object):
         "access_type",
     ]
 
+    def get_all_books_from_csv(self, csv_file):
+        pass
+
     def get_data_from_row(self, row):
         book_data = {
             "title": row[0],
