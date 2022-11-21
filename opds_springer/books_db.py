@@ -26,6 +26,8 @@ class Book(Base):
     series_id = Column(Integer())
     language = Column(String(length=50))
     description = Column(String(length=50))
+    authors = Column(String(length=256))
+    editors = Column(String(length=256))
     subjects = relationship("Subjects", secondary=association_table)
 
 

@@ -1,6 +1,6 @@
 import logging
 from configparser import ConfigParser
-from csv import DictReader, Sniffer
+from csv import DictReader
 
 import requests
 
@@ -67,8 +67,7 @@ class BookData(object):
             dict: row data
         """
         with open(kbart_file, mode="r") as tsv:
-            dialect = Sniffer().sniff(tsv.read(5000))
-            tsv_reader = DictReader(tsv, dialect=dialect)
+            tsv_reader = DictReader(tsv, dialect="excel-tab")
             for row in tsv_reader:
                 yield row
 
@@ -86,6 +85,8 @@ class SpringerClient(object):
             "description": record["abstract"],
             "publication_date": record["publicationDate"],
             "subjects": self.parse_subjects(facets),
+            "authors": self.parse_contributors(record["creators"], "creator"),
+            "editors": self.parse_contributors(record["bookEditors"], "bookEditor"),
         }
         return book_data
 
@@ -106,7 +107,5 @@ class SpringerClient(object):
         subjects = [sf["value"] for sf in subject_facets]
         return subjects
 
-    def parse_creators_from_json(self, creators):
-        """docstring for parse_creators_from_json"""
-
-    pass
+    def parse_contributors(self, list_of_contributors, contributor_type):
+        return [c[contributor_type] for c in list_of_contributors]
