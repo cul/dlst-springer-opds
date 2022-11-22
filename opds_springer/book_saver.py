@@ -19,6 +19,10 @@ class BookData(object):
         self.config.read("local_settings.cfg")
 
     def save_books(self):
+        """Saves books from a kbart file to database.
+
+        Supplements kbart data with data from Springer API.
+        """
         # TODO: download kbart file? - will need api key
         springer_client = SpringerClient(self.config.get("Springer", "api_key"))
         kbart_rows = self.parse_kbart_tsv("path/to/file.txt")
@@ -79,6 +83,15 @@ class SpringerClient(object):
         self.api_key = api_key
 
     def get_book_data(self, doi):
+        """Gets and formats book data from the Springer API.
+
+        Args:
+            doi (string): identifier of book to retrieve. May or may not include
+        "doi" at beginning of identifier.
+
+        Returns:
+            dict: data about a book
+        """
         record, facets = self.request_book(doi)
         book_data = {
             "language": record["language"],
@@ -91,6 +104,15 @@ class SpringerClient(object):
         return book_data
 
     def request_book(self, doi):
+        """Gets and formats the JSON response for the Springer single book endpoint.
+
+        Args:
+            doi (string): identifier of book to retrieve. May or may not include
+        "doi" at beginning of identifier
+
+        Returns:
+            tuple: main book information and facets
+        """
         # check if "doi:" is in beginning of string; if not, add
         doi = f"doi:{doi}" if not doi.startswith("doi") else doi
         try:
@@ -103,9 +125,26 @@ class SpringerClient(object):
             raise Exception(err)
 
     def parse_subjects_from_json(self, facets):
+        """Gets a list of subjects from the facets portion of an API response.
+
+        Args:
+            facets (list): list of Springer facets
+
+        Returns:
+            list: list of subjects
+        """
         subject_facets = [f["values"] for f in facets if f["name"] == "subject"][0]
         subjects = [sf["value"] for sf in subject_facets]
         return subjects
 
     def parse_contributors(self, list_of_contributors, contributor_type):
+        """Gets a list of creators or editors.
+
+        Args:
+            list_of_contributors (list): list of Springer creators or bookEditors
+            contributor_type (string): creator or bookEditor
+
+        Returns:
+            list: list of creators or editors
+        """
         return [c[contributor_type] for c in list_of_contributors]
