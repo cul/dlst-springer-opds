@@ -97,7 +97,7 @@ class SpringerClient(object):
             "language": record["language"],
             "description": record["abstract"],
             "publication_date": record["publicationDate"],
-            "subjects": self.parse_subjects(facets),
+            "subjects": record["subjects"],
             "authors": self.parse_contributors(record["creators"], "creator"),
             "editors": self.parse_contributors(record["bookEditors"], "bookEditor"),
         }
@@ -111,7 +111,7 @@ class SpringerClient(object):
         "doi" at beginning of identifier
 
         Returns:
-            tuple: main book information and facets
+            dict: main book information
         """
         # check if "doi:" is in beginning of string; if not, add
         doi = f"doi:{doi}" if not doi.startswith("doi") else doi
@@ -120,22 +120,9 @@ class SpringerClient(object):
             response = requests.get(self.BASE_URL, params=params)
             response.raise_for_status()
             page_data = response.json()
-            return page_data["records"][0], page_data["facets"]
+            return page_data["records"][0]
         except Exception as err:
             raise Exception(err)
-
-    def parse_subjects_from_json(self, facets):
-        """Gets a list of subjects from the facets portion of an API response.
-
-        Args:
-            facets (list): list of Springer facets
-
-        Returns:
-            list: list of subjects
-        """
-        subject_facets = [f["values"] for f in facets if f["name"] == "subject"][0]
-        subjects = [sf["value"] for sf in subject_facets]
-        return subjects
 
     def parse_contributors(self, list_of_contributors, contributor_type):
         """Gets a list of creators or editors.
