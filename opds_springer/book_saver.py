@@ -92,7 +92,7 @@ class SpringerClient(object):
         Returns:
             dict: data about a book
         """
-        record, facets = self.request_book(doi)
+        record = self.request_book(doi)
         book_data = {
             "language": record["language"],
             "description": record["abstract"],

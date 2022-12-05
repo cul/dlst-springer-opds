@@ -2,6 +2,7 @@ import json
 import types
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
 import responses
 from responses import matchers
@@ -26,8 +27,15 @@ class TestSpringerClient(unittest.TestCase):
         springer_client = SpringerClient("api_key")
         self.assertTrue(springer_client)
 
-    def test_get_book_data(self):
-        pass
+    @patch("opds_springer.book_saver.SpringerClient.request_book")
+    def test_get_book_data(self, mock_book):
+        springer_client = SpringerClient("3ee6153f5ef441579808d667c16df936")
+        with open(Path("fixtures", "springer_book_example.json")) as f:
+            page_data = json.load(f)
+        mock_book.return_value = page_data["records"][0]
+        book_data = springer_client.get_book_data("doi:10.1007/978-1-349-11550-1")
+        self.assertIsInstance(book_data, dict)
+        self.assertEqual(book_data["publication_date"], "1991-01-01")
 
     @responses.activate
     def test_request_book(self):
