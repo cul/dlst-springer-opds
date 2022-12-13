@@ -2,7 +2,7 @@ from sqlalchemy import Column, ForeignKey, Integer, String, Table, create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship, sessionmaker
 
-engine = create_engine("sqlite:///test")
+engine = create_engine("sqlite:///test.db", echo=True)
 
 Base = declarative_base()
 
@@ -28,7 +28,7 @@ class Book(Base):
     description = Column(String(length=50))
     authors = Column(String(length=256))
     editors = Column(String(length=256))
-    subjects = relationship("Subjects", secondary=association_table)
+    subjects = relationship("Subject", secondary=association_table)
 
 
 class Subject(Base):

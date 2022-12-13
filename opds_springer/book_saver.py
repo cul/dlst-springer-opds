@@ -30,7 +30,7 @@ class BookData(object):
             try:
                 book_id = kbart_row["title_id"]
                 if not session.get(Book, book_id):
-                    springer_data = springer_client.get_book_from_api(book_id)
+                    springer_data = springer_client.get_book_data(book_id)
                     book = Book(
                         book_id=book_id,
                         title=kbart_row["publication_title"],
@@ -41,22 +41,28 @@ class BookData(object):
                         language=springer_data["language"],
                         description=springer_data["description"],
                     )
-                    session.add(book)
                     for subject in springer_data["subjects"]:
-                        if session.query(Subject).filter_by(
-                            subject=subject, source="springer"
+                        if (
+                            session.query(Subject)
+                            .filter_by(subject=subject, source="springer")
+                            .first()
                         ):
                             subject_record = (
                                 session.query(Subject)
                                 .filter_by(subject=subject, source="springer")
                                 .first()
                             )
-                            print(subject_record)
-                            # TODO: connect subject to book
+                            book.subjects.append(subject_record)
                         else:
                             new_subject = Subject(subject=subject, source="springer")
                             session.add(new_subject)
-                            # TODO: connect subject to book
+                            subject_record = (
+                                session.query(Subject)
+                                .filter_by(subject=subject, source="springer")
+                                .first()
+                            )
+                            book.subjects.append(subject_record)
+                    session.add(book)
                     session.commit()
             except Exception as e:
                 raise (e)
@@ -98,8 +104,8 @@ class SpringerClient(object):
             "description": record["abstract"],
             "publication_date": record["publicationDate"],
             "subjects": record["subjects"],
-            "authors": self.parse_contributors(record["creators"], "creator"),
-            "editors": self.parse_contributors(record["bookEditors"], "bookEditor"),
+            "authors": self.parse_contributors(record.get("creators"), "creator"),
+            "editors": self.parse_contributors(record.get("bookEditors"), "bookEditor"),
         }
         return book_data
 
@@ -134,4 +140,5 @@ class SpringerClient(object):
         Returns:
             list: list of creators or editors
         """
-        return [c[contributor_type] for c in list_of_contributors]
+        if list_of_contributors:
+            return [c[contributor_type] for c in list_of_contributors]
