@@ -63,7 +63,6 @@ class TestSpringerClient(unittest.TestCase):
         parsed_editors = SpringerClient("api_key").parse_contributors(
             list_of_editors, "bookEditor"
         )
-        self.assertIsInstance(parsed_creators, list)
+        self.assertIsInstance(parsed_creators, str)
         self.assertTrue("Fultz, Brent" in parsed_creators)
-        self.assertIsInstance(parsed_editors, list)
-        self.assertEqual(len(parsed_editors), 0)
+        self.assertIsNone(parsed_editors)
