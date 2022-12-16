@@ -23,12 +23,24 @@ class Book(Base):
     print_isbn = Column(String(length=50))
     ebook_isbn = Column(String(length=50))
     publisher = Column(String(length=256))
+    published = Column(String(length=256))
     series_id = Column(Integer())
     language = Column(String(length=50))
     description = Column(String(length=50))
     authors = Column(String(length=256))
     editors = Column(String(length=256))
     subjects = relationship("Subject", secondary=association_table)
+    links = relationship("Link", backref="book")
+
+
+class Link(Base):
+    __tablename__ = "link"
+
+    id = Column(Integer(), primary_key=True)
+    rel = Column(String(length=256), default="http://opds-spec.org/acquisition")
+    pub_type = Column(String(length=50))
+    href = Column(String(length=256))
+    book_id = Column(String(length=50), ForeignKey("book.book_id"))
 
 
 class Subject(Base):

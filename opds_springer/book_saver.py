@@ -4,7 +4,7 @@ from csv import DictReader
 
 import requests
 
-from .books_db import Book, Subject, session
+from .books_db import Book, Link, Subject, session
 
 
 class BookData(object):
@@ -40,7 +40,15 @@ class BookData(object):
                         series_id=kbart_row["parent_publication_title_id"],
                         language=springer_data["language"],
                         description=springer_data["description"],
+                        published=springer_data["publication_date"],
                     )
+                    if springer_data.get("authors"):
+                        book.authors = springer_data["authors"]
+                    if springer_data.get("editors"):
+                        book.authors = springer_data["editors"]
+                    for pub_type, link in springer_data["links"]:
+                        new_link = Link(pub_type=pub_type, href=link)
+                        book.links.append(new_link)
                     for subject in springer_data["subjects"]:
                         if (
                             session.query(Subject)
@@ -76,6 +84,7 @@ class BookData(object):
         Yields:
             dict: row data
         """
+        # TODO: deal with characteer encoding issues, e.g. 'F√§lle zur Personalwirtschaft'
         with open(kbart_file, mode="r") as tsv:
             tsv_reader = DictReader(tsv, dialect="excel-tab")
             for row in tsv_reader:
@@ -106,6 +115,7 @@ class SpringerClient(object):
             "subjects": record["subjects"],
             "authors": self.parse_contributors(record.get("creators"), "creator"),
             "editors": self.parse_contributors(record.get("bookEditors"), "bookEditor"),
+            "links": self.get_links(record),
         }
         return book_data
 
@@ -141,4 +151,11 @@ class SpringerClient(object):
             list: list of creators or editors
         """
         if list_of_contributors:
-            return [c[contributor_type] for c in list_of_contributors]
+            return "|".join([c[contributor_type] for c in list_of_contributors])
+
+    def get_links(self, record):
+        links = []
+        for url in record["url"]:
+            if url.get("format"):
+                links.append((url["format"], url["value"]))
+        return links
