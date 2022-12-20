@@ -154,6 +154,14 @@ class SpringerClient(object):
             return "|".join([c[contributor_type] for c in list_of_contributors])
 
     def get_links(self, record):
+        """Gets links to media formats.
+
+        Args:
+            record (dict): main book information
+
+        Returns:
+            list: list of links to ebooks
+        """
         links = []
         for url in record["url"]:
             if url.get("format"):

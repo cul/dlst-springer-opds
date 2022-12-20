@@ -7,9 +7,10 @@ from .books_db import Book, session
 
 
 class GenerateFeed(object):
-    PAGE_SIZE = 10
+    PAGE_SIZE = 1000
 
-    def opds_response_page(self):
+    def opds_feed(self):
+        """Creates a feed of OPDS data from saved books."""
         self.total_pubs = session.query(Book).count()
         self.total_pages = ceil(self.total_pubs / self.PAGE_SIZE)
         books = self.get_books_from_db()
@@ -28,6 +29,15 @@ class GenerateFeed(object):
                 count += 1
 
     def opds_page_data(self, page_number, publications):
+        """Formats data for one OPDS response page.
+
+        Args:
+            page_number (int): current page number
+            publications (list): OPDS data for publications
+
+        Returns:
+            dict: OPDS response data
+        """
         return {
             "metadata": {
                 "title": "Springer Test Feed",
@@ -40,6 +50,16 @@ class GenerateFeed(object):
         }
 
     def opds_response_links(self, page_number):
+        """Formats links data for OPDS response.
+
+        Args:
+            page_number (int): current page number
+
+        Returns:
+            list: list of dictionaries containing link information
+
+        """
+
         links = []
         self_rel = "self"
         first_rel = "first"
@@ -73,6 +93,16 @@ class GenerateFeed(object):
         return links
 
     def opds_response_link(self, page_number, rel):
+        """Formats a link.
+
+        Args:
+            page_number (int): current page number
+            rel (str): e.g., 'last'
+
+        Returns:
+            dict: link information
+
+        """
         return {
             "rel": rel,
             "href": f"https://ebooks-test.library.columbia.edu/static-feeds/springer/springer_test_feed_{page_number}.json",
@@ -80,6 +110,11 @@ class GenerateFeed(object):
         }
 
     def get_books_from_db(self):
+        """Gets all book records.
+
+        Yields:
+            obj: book record
+        """
         result = session.execute(select(Book))
         for book in result.all():
             yield book[0]
@@ -87,6 +122,14 @@ class GenerateFeed(object):
 
 class BookOPDS(object):
     def create_json(self, book):
+        """Creates dictionary of OPDS book data.
+
+        Args:
+            book (obj): book record
+
+        Returns:
+            dict: book data
+        """
         self.book = book
         book_dict = {
             "metatadata": self.metadata(),
@@ -96,6 +139,7 @@ class BookOPDS(object):
         return book_dict
 
     def metadata(self):
+        """Creates dictionary of book metadata."""
         metadata = {
             "identifier": f"https://dx.doi.org/{self.book.book_id}",
             "modified": datetime.utcnow().isoformat(),
@@ -110,6 +154,7 @@ class BookOPDS(object):
         return metadata
 
     def subject(self):
+        """Creates list of book subjects."""
         subject = [
             {
                 "scheme": "http://librarysimplified.org/terms/fiction/",
@@ -122,6 +167,7 @@ class BookOPDS(object):
         return subject
 
     def author(self):
+        """Creates list of book authors."""
         if self.book.authors:
             authors = []
             for a in self.book.authors.split("|"):
@@ -129,6 +175,7 @@ class BookOPDS(object):
             return authors
 
     def images(self):
+        """Creates list of book images."""
         images = []
         for size in ["height_648", "width_125", "width_95"]:
             image = {
@@ -141,6 +188,7 @@ class BookOPDS(object):
         return images
 
     def links(self):
+        """Creates list of book links."""
         links = []
         for li in self.book.links:
             pub_type = (
