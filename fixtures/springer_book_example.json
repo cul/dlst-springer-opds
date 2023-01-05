@@ -45,7 +45,11 @@
             "genre": "Undergraduate textbook",
             "copyright": "©1991 Macmillan Publishers Limited",
             "abstract": "",
-            "conferenceInfo": []
+            "conferenceInfo": [],
+            "subjects": [
+                "Computer Science",
+                "Theory of Computation"
+            ]
         }
     ],
     "facets": [
