@@ -86,7 +86,7 @@ class BookData(object):
         """
         # TODO: deal with characteer encoding issues, e.g. 'F√§lle zur Personalwirtschaft'
         with open(kbart_file, mode="r") as tsv:
-            tsv_reader = DictReader(tsv, dialect="excel-tab")
+            tsv_reader = DictReader(tsv, delimiter="\t")
             for row in tsv_reader:
                 yield row
 
