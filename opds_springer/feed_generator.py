@@ -1,4 +1,7 @@
+import json
+from configparser import ConfigParser
 from math import ceil
+from pathlib import Path
 
 from sqlalchemy import select
 
@@ -6,12 +9,16 @@ from .books_db import Book, session
 
 
 class GenerateFeed(object):
-    PAGE_SIZE = 1000
+    def __init__(self):
+        self.config = ConfigParser()
+        self.config.read("local_settings.cfg")
+        self.json_dir = self.config.get("Other", "json_dir")
+        self.page_size = 1000
 
     def opds_feed(self):
         """Creates a feed of OPDS data from saved books."""
         self.total_pubs = session.query(Book).count()
-        self.total_pages = ceil(self.total_pubs / self.PAGE_SIZE)
+        self.total_pages = ceil(self.total_pubs / self.page_size)
         books = self.get_books_from_db()
         count = 0
         publications = []
@@ -20,12 +27,23 @@ class GenerateFeed(object):
             for book in books:
                 book_json = BookOPDS().create_json(book)
                 publications.append(book_json)
-                if count > 0 and count % self.PAGE_SIZE == 0:
+                if count > 0 and count % self.page_size == 0:
                     opds_page = self.opds_page_data(page_number, publications)
-                    print(opds_page)
+                    self.write_json(page_number, opds_page)
                     page_number += 1
                     publications = []
                 count += 1
+
+    def write_json(self, page_number, opds_page):
+        """Create JSON file.
+
+        Args:
+            page_number (int): page number to append to end of filename
+            opds_page (dict): OPDS data to write
+        """
+        output_file = Path(self.json_dir, f"springer_feed_{page_number}.json")
+        with open(output_file, "w") as json_file:
+            json.dump(opds_page, json_file)
 
     def opds_page_data(self, page_number, publications):
         """Formats data for one OPDS response page.
@@ -40,7 +58,7 @@ class GenerateFeed(object):
         return {
             "metadata": {
                 "title": "Springer Test Feed",
-                "itemsPerPage": self.PAGE_SIZE,
+                "itemsPerPage": self.page_size,
                 "currentPage": page_number,
                 "numberOfItems": self.total_pubs,
             },
@@ -56,9 +74,7 @@ class GenerateFeed(object):
 
         Returns:
             list: list of dictionaries containing link information
-
         """
-
         links = []
         self_rel = "self"
         first_rel = "first"
@@ -104,7 +120,7 @@ class GenerateFeed(object):
         """
         return {
             "rel": rel,
-            "href": f"https://ebooks-test.library.columbia.edu/static-feeds/springer/springer_test_feed_{page_number}.json",
+            "href": f"https://ebooks-test.library.columbia.edu/static-feeds/springer/springer_feed_{page_number}.json",
             "type": "application/opds+json",
         }
 

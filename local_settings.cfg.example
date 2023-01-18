@@ -4,3 +4,6 @@ kbart_path: /path/to/kbart_file.txt
 
 [Database]
 db = sqlite:///test.db
+
+[Other]
+json_dir = /path/to/output
