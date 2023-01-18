@@ -20,7 +20,7 @@ class BookData(object):
         self.api_key = self.config.get("Springer", "api_key")
         self.kbart_file = self.config.get("Springer", "kbart_path")
 
-    def save_books(self, tsv_filepath):
+    def save_books(self):
         """Saves books from a kbart file to database.
 
         Supplements kbart data with data from Springer API.

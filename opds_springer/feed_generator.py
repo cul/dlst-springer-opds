@@ -1,4 +1,3 @@
-from datetime import datetime
 from math import ceil
 
 from sqlalchemy import select
@@ -142,7 +141,7 @@ class BookOPDS(object):
         """Creates dictionary of book metadata."""
         metadata = {
             "identifier": f"https://dx.doi.org/{self.book.book_id}",
-            "modified": datetime.utcnow().isoformat(),
+            "modified": self.book.modified.isoformat(),
             "title": self.book.title,
             "language": self.book.language,
             "@type": "http://schema.org/EBook",
