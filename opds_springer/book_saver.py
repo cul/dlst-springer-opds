@@ -17,15 +17,16 @@ class BookData(object):
         )
         self.config = ConfigParser()
         self.config.read("local_settings.cfg")
+        self.api_key = self.config.get("Springer", "api_key")
+        self.kbart_file = self.config.get("Springer", "kbart_path")
 
-    def save_books(self):
+    def save_books(self, tsv_filepath):
         """Saves books from a kbart file to database.
 
         Supplements kbart data with data from Springer API.
         """
-        # TODO: download kbart file? - will need api key
-        springer_client = SpringerClient(self.config.get("Springer", "api_key"))
-        kbart_rows = self.parse_kbart_tsv("path/to/file.txt")
+        springer_client = SpringerClient(self.api_key)
+        kbart_rows = self.parse_kbart_tsv()
         for kbart_row in kbart_rows:
             try:
                 book_id = kbart_row["title_id"]
@@ -75,7 +76,7 @@ class BookData(object):
             except Exception as e:
                 raise (e)
 
-    def parse_kbart_tsv(self, kbart_file):
+    def parse_kbart_tsv(self):
         """Parses a kbart tsv file as a dictionary.
 
         Args:
@@ -84,8 +85,7 @@ class BookData(object):
         Yields:
             dict: row data
         """
-        # TODO: deal with characteer encoding issues, e.g. 'F√§lle zur Personalwirtschaft'
-        with open(kbart_file, mode="r") as tsv:
+        with open(self.kbart_file, mode="r") as tsv:
             tsv_reader = DictReader(tsv, delimiter="\t")
             for row in tsv_reader:
                 yield row

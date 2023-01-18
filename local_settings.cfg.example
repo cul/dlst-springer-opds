@@ -1,0 +1,6 @@
+[Springer]
+api_key: 3ee6153f5ef441579808d667c16df936
+kbart_path: /path/to/kbart_file.txt
+
+[Database]
+db = sqlite:///test.db

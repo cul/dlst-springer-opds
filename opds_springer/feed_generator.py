@@ -150,6 +150,7 @@ class BookOPDS(object):
             "published": self.book.published,
             "subject": self.subject(),
             "author": self.author(),
+            "editor": self.editor(),
         }
         return metadata
 
@@ -173,6 +174,14 @@ class BookOPDS(object):
             for a in self.book.authors.split("|"):
                 authors.append({"name": f"{a}"})
             return authors
+
+    def editor(self):
+        """Creates list of book editors."""
+        if self.book.editors:
+            editors = []
+            for a in self.book.editors.split("|"):
+                editors.append({"name": f"{a}"})
+            return editors
 
     def images(self):
         """Creates list of book images."""

@@ -1,5 +1,7 @@
 __pycache__
-config.ini
-csv
 output_test
 tmp
+local_settings.cfg
+*.db
+.coverage
+*.log

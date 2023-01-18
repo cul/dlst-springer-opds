@@ -16,8 +16,9 @@ class TestBookData(unittest.TestCase):
         self.assertTrue(book_data)
 
     def test_parse_kbart_tsv(self):
-        kbart_file = Path("fixtures", "springer_kbart_example.txt")
-        parsed_kbart = BookData().parse_kbart_tsv(kbart_file)
+        book_data = BookData()
+        book_data.kbart_file = Path("fixtures", "springer_kbart_example.txt")
+        parsed_kbart = book_data.parse_kbart_tsv()
         self.assertIsInstance(parsed_kbart, types.GeneratorType)
         self.assertEqual(len([x for x in parsed_kbart]), 51)
 

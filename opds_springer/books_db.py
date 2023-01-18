@@ -1,8 +1,23 @@
-from sqlalchemy import Column, ForeignKey, Integer, String, Table, create_engine
+from configparser import ConfigParser
+
+from sqlalchemy import (
+    Column,
+    DateTime,
+    ForeignKey,
+    Integer,
+    String,
+    Table,
+    create_engine,
+)
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship, sessionmaker
+from sqlalchemy.sql import func
 
-engine = create_engine("sqlite:///test.db")
+config = ConfigParser()
+config.read("local_settings.cfg")
+db_url = config.get("Database", "db")
+
+engine = create_engine(db_url)
 
 Base = declarative_base()
 
@@ -31,6 +46,9 @@ class Book(Base):
     editors = Column(String(length=256))
     subjects = relationship("Subject", secondary=association_table)
     links = relationship("Link", backref="book")
+    modified = Column(
+        DateTime(), server_default=func.now(), onupdate=func.current_timestamp()
+    )
 
 
 class Link(Base):
