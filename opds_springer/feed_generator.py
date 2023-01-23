@@ -12,7 +12,8 @@ class GenerateFeed(object):
     def __init__(self):
         self.config = ConfigParser()
         self.config.read("local_settings.cfg")
-        self.json_dir = self.config.get("Other", "json_dir")
+        self.json_dir = self.config.get("Feed", "json_dir")
+        self.feed_title = self.config.get("Feed", "title")
         self.page_size = 1000
 
     def opds_feed(self):
@@ -57,7 +58,7 @@ class GenerateFeed(object):
         """
         return {
             "metadata": {
-                "title": "Springer Test Feed",
+                "title": self.feed_title,
                 "itemsPerPage": self.page_size,
                 "currentPage": page_number,
                 "numberOfItems": self.total_pubs,
