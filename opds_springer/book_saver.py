@@ -18,6 +18,7 @@ class BookData(object):
         self.config = ConfigParser()
         self.config.read("local_settings.cfg")
         self.api_key = self.config.get("Springer", "api_key")
+        self.entitlement_id = self.config.get("Springer", "entitlement")
         self.kbart_file = self.config.get("Springer", "kbart_path")
 
     def save_books(self):
@@ -94,8 +95,9 @@ class BookData(object):
 class SpringerClient(object):
     BASE_URL = "https://api.springernature.com/bookmeta/v1/json"
 
-    def __init__(self, api_key):
+    def __init__(self, api_key, entitlement_id):
         self.api_key = api_key
+        self.entitlement_id = entitlement_id
 
     def get_book_data(self, doi):
         """Gets and formats book data from the Springer API.
@@ -132,7 +134,11 @@ class SpringerClient(object):
         # check if "doi:" is in beginning of string; if not, add
         doi = f"doi:{doi}" if not doi.startswith("doi") else doi
         try:
-            params = {"q": doi, "api_key": self.api_key}
+            params = {
+                "q": doi,
+                "api_key": self.api_key,
+                "entitlement": self.entitlement_id,
+            }
             response = requests.get(self.BASE_URL, params=params)
             response.raise_for_status()
             page_data = response.json()
