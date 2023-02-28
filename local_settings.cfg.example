@@ -1,0 +1,11 @@
+[Springer]
+api_key: 3ee6153f5ef441579808d667c16df936
+kbart_path: /path/to/kbart_file.txt
+entitlement: entitlemend-id
+
+[Database]
+db = sqlite:///test.db
+
+[Feed]
+json_dir = /path/to/output
+title = Springer Test Feed
