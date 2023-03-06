@@ -21,23 +21,30 @@ class BookData(object):
         )
         self.config = ConfigParser()
         self.config.read("local_settings.cfg")
-        self.api_key = self.config.get("Springer", "api_key")
+        self.springer_client = SpringerClient(self.config.get("Springer", "api_key"))
         self.entitlement_id = self.config.get("Springer", "entitlement")
         self.kbart_file = self.config.get("Springer", "kbart_path")
 
-    def save_books(self):
+    def save_books_from_api(self, days):
+        """Saves books from Springer API loaded after x days ago.
+
+        Args:
+            days (int): number of days ago to load from
+        """
+        pass
+
+    def save_books_from_kbart(self):
         """Saves books from a kbart file to database.
 
         Supplements kbart data with data from Springer API.
         """
-        springer_client = SpringerClient(self.api_key, self.entitlement_id)
         kbart_rows = self.parse_kbart_tsv()
         for kbart_row in kbart_rows:
             try:
                 book_id = kbart_row["title_id"]
                 logging.info(f"Saving {book_id}...")
                 if not session.get(Book, book_id):
-                    springer_data = springer_client.get_book_data(book_id)
+                    springer_data = self.springer_client.supplement_book_data(book_id)
                     book = Book(
                         book_id=book_id,
                         title=kbart_row["publication_title"],
@@ -108,7 +115,35 @@ class SpringerClient(object):
         self.api_key = api_key
         self.entitlement_id = entitlement_id
 
-    def get_book_data(self, doi):
+    def request_books_loaded_from(self, date_string):
+        """docstring for get_books_loaded_from
+
+        Args:
+            date_string (str): date to start from, formatted YYYY-MM-DD
+        """
+        self.page_length = 100
+        try:
+            params = {
+                "q": f"dateloadedfrom:{date_string}",
+                "p": self.page_length,
+                "api_key": self.api_key,
+                "entitlement": self.entitlement_id,
+            }
+            response = requests.get(self.BASE_URL, params=params)
+            response.raise_for_status()
+            total_results = int(response.json()["result"][0]["total"])
+            if total_results <= self.page_length:
+                for record in response.json()["records"]:
+                    yield record
+            else:
+                start = 1
+                while response.json().get("nextPage"):
+                    params["s"] = start
+
+        except Exception as err:
+            raise Exception(err)
+
+    def supplement_book_data(self, doi):
         """Gets and formats book data from the Springer API.
 
         Args:
