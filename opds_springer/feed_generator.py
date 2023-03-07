@@ -44,7 +44,7 @@ class GenerateFeed(object):
         """
         output_file = Path(self.json_dir, f"springer_feed_{page_number}.json")
         with open(output_file, "w") as json_file:
-            json.dump(opds_page, json_file)
+            json.dump(opds_page, json_file, indent=4)
 
     def opds_page_data(self, page_number, publications):
         """Formats data for one OPDS response page.
