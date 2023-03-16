@@ -53,7 +53,7 @@ class TestSpringerClient(unittest.TestCase):
             "entitlement": "entitlement_id",
         }
         responses.get(
-            url="https://api.springernature.com/bookmeta/v1/json",
+            url="https://spdi.public.springernature.app/bookmeta/v1/json",
             json=response_json,
             match=[matchers.query_param_matcher(params)],
         )

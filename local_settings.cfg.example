@@ -9,3 +9,4 @@ db = sqlite:///test.db
 [Feed]
 json_dir = /path/to/output
 title = Springer Test Feed
+base_url = https://ebooks-test.library.columbia.edu/static-feeds/springer_test
