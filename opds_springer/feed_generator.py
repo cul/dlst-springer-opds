@@ -14,6 +14,7 @@ class GenerateFeed(object):
         self.config.read("local_settings.cfg")
         self.json_dir = self.config.get("Feed", "json_dir")
         self.feed_title = self.config.get("Feed", "title")
+        self.base_url = self.config.get("Feed", "base_url")
         self.page_size = 1000
 
     def opds_feed(self):
@@ -121,7 +122,7 @@ class GenerateFeed(object):
         """
         return {
             "rel": rel,
-            "href": f"https://ebooks-test.library.columbia.edu/static-feeds/springer_test/springer_feed_{page_number}.json",
+            "href": f"{self.base_url}/springer_feed_{page_number}.json",
             "type": "application/opds+json",
         }
 
