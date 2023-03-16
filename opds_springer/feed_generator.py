@@ -21,19 +21,19 @@ class GenerateFeed(object):
         self.total_pubs = session.query(Book).count()
         self.total_pages = ceil(self.total_pubs / self.page_size)
         books = self.get_books_from_db()
-        count = 0
+        count = 1
         publications = []
         page_number = 1
-        while count < self.total_pubs:
-            for book in books:
-                book_json = BookOPDS().create_json(book)
-                publications.append(book_json)
-                if count > 0 and count % self.page_size == 0:
-                    opds_page = self.opds_page_data(page_number, publications)
-                    self.write_json(page_number, opds_page)
-                    page_number += 1
-                    publications = []
-                count += 1
+        for book in books:
+            book_json = BookOPDS().create_json(book)
+            publications.append(book_json)
+            if count % self.page_size == 0 or count == self.total_pubs:
+                opds_page = self.opds_page_data(page_number, publications)
+                opds_page["metadata"]["itemsPerPage"] = len(publications)
+                self.write_json(page_number, opds_page)
+                page_number += 1
+                publications = []
+            count += 1
 
     def write_json(self, page_number, opds_page):
         """Create JSON file.
@@ -44,7 +44,7 @@ class GenerateFeed(object):
         """
         output_file = Path(self.json_dir, f"springer_feed_{page_number}.json")
         with open(output_file, "w") as json_file:
-            json.dump(opds_page, json_file)
+            json.dump(opds_page, json_file, indent=4)
 
     def opds_page_data(self, page_number, publications):
         """Formats data for one OPDS response page.
@@ -121,7 +121,7 @@ class GenerateFeed(object):
         """
         return {
             "rel": rel,
-            "href": f"https://ebooks-test.library.columbia.edu/static-feeds/springer/springer_feed_{page_number}.json",
+            "href": f"https://ebooks-test.library.columbia.edu/static-feeds/springer_test/springer_feed_{page_number}.json",
             "type": "application/opds+json",
         }
 
@@ -148,7 +148,7 @@ class BookOPDS(object):
         """
         self.book = book
         book_dict = {
-            "metatadata": self.metadata(),
+            "metadata": self.metadata(),
             "images": self.images(),
             "links": self.links(),
         }
@@ -157,7 +157,7 @@ class BookOPDS(object):
     def metadata(self):
         """Creates dictionary of book metadata."""
         metadata = {
-            "identifier": f"https://dx.doi.org/{self.book.book_id}",
+            "identifier": f"urn:doi:{self.book.book_id}",
             "modified": self.book.modified.isoformat(),
             "title": self.book.title,
             "language": self.book.language,
@@ -165,9 +165,11 @@ class BookOPDS(object):
             "publisher": self.book.publisher,
             "published": self.book.published,
             "subject": self.subject(),
-            "author": self.author(),
-            "editor": self.editor(),
         }
+        if self.author():
+            metadata["author"] = self.author()
+        if self.editor():
+            metadata["editor"] = self.editor()
         return metadata
 
     def subject(self):

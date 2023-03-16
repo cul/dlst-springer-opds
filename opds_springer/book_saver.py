@@ -1,10 +1,14 @@
 import logging
 from configparser import ConfigParser
-from csv import DictReader
+from csv import QUOTE_NONE, DictReader
 
 import requests
 
 from .books_db import Book, Link, Subject, session
+
+
+class APIException(Exception):
+    pass
 
 
 class BookData(object):
@@ -26,11 +30,12 @@ class BookData(object):
 
         Supplements kbart data with data from Springer API.
         """
-        springer_client = SpringerClient(self.api_key)
+        springer_client = SpringerClient(self.api_key, self.entitlement_id)
         kbart_rows = self.parse_kbart_tsv()
         for kbart_row in kbart_rows:
             try:
                 book_id = kbart_row["title_id"]
+                logging.info(f"Saving {book_id}...")
                 if not session.get(Book, book_id):
                     springer_data = springer_client.get_book_data(book_id)
                     book = Book(
@@ -74,8 +79,12 @@ class BookData(object):
                             book.subjects.append(subject_record)
                     session.add(book)
                     session.commit()
+            except APIException as e:
+                logging.error(e)
+                pass
             except Exception as e:
-                raise (e)
+                logging.error(e)
+                pass
 
     def parse_kbart_tsv(self):
         """Parses a kbart tsv file as a dictionary.
@@ -87,13 +96,13 @@ class BookData(object):
             dict: row data
         """
         with open(self.kbart_file, mode="r") as tsv:
-            tsv_reader = DictReader(tsv, delimiter="\t")
+            tsv_reader = DictReader(tsv, delimiter="\t", quoting=QUOTE_NONE)
             for row in tsv_reader:
                 yield row
 
 
 class SpringerClient(object):
-    BASE_URL = "https://api.springernature.com/bookmeta/v1/json"
+    BASE_URL = "https://spdi.public.springernature.app/bookmeta/v1/json"
 
     def __init__(self, api_key, entitlement_id):
         self.api_key = api_key
@@ -142,7 +151,10 @@ class SpringerClient(object):
             response = requests.get(self.BASE_URL, params=params)
             response.raise_for_status()
             page_data = response.json()
-            return page_data["records"][0]
+            if page_data["records"]:
+                return page_data["records"][0]
+            else:
+                raise APIException(f"{doi} not found in API")
         except Exception as err:
             raise Exception(err)
 
