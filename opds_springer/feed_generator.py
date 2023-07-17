@@ -43,7 +43,7 @@ class GenerateFeed(object):
             page_number (int): page number to append to end of filename
             opds_page (dict): OPDS data to write
         """
-        output_file = Path(self.json_dir, f"springer_feed_{page_number}.json")
+        output_file = Path(self.json_dir, f"springer_test_feed_{page_number}.json")
         with open(output_file, "w") as json_file:
             json.dump(opds_page, json_file, indent=4)
 
@@ -122,7 +122,7 @@ class GenerateFeed(object):
         """
         return {
             "rel": rel,
-            "href": f"{self.base_url}/springer_feed_{page_number}.json",
+            "href": f"{self.base_url}/springer_test_feed_{page_number}.json",
             "type": "application/opds+json",
         }
 
@@ -159,6 +159,7 @@ class BookOPDS(object):
         """Creates dictionary of book metadata."""
         metadata = {
             "identifier": f"urn:doi:{self.book.book_id}",
+            # "modified": "2023-05-24T23:24:11",
             "modified": self.book.modified.isoformat(),
             "title": self.book.title,
             "language": self.book.language,
