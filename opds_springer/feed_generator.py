@@ -15,6 +15,7 @@ class GenerateFeed(object):
         self.json_dir = self.config.get("Feed", "json_dir")
         self.feed_title = self.config.get("Feed", "title")
         self.base_url = self.config.get("Feed", "base_url")
+        self.feed_base_name = "_".join(self.feed_title.lower().split(" "))
         self.page_size = 1000
 
     def opds_feed(self):
@@ -43,7 +44,7 @@ class GenerateFeed(object):
             page_number (int): page number to append to end of filename
             opds_page (dict): OPDS data to write
         """
-        output_file = Path(self.json_dir, f"springer_test_feed_{page_number}.json")
+        output_file = Path(self.json_dir, f"{self.feed_base_name}_{page_number}.json")
         with open(output_file, "w") as json_file:
             json.dump(opds_page, json_file, indent=4)
 
@@ -122,7 +123,7 @@ class GenerateFeed(object):
         """
         return {
             "rel": rel,
-            "href": f"{self.base_url}/springer_test_feed_{page_number}.json",
+            "href": f"{self.base_url}/{self.feed_base_name}_{page_number}.json",
             "type": "application/opds+json",
         }
 
