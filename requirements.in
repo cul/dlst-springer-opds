@@ -1,2 +1,2 @@
-requests~=2.28
+requests~=2.31
 SQLAlchemy~=1.4
