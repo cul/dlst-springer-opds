@@ -179,18 +179,19 @@ class SpringerClient(object):
         Args:
             date_string (str): date to start from, formatted YYYY-MM-DD
         """
-        self.page_length = 100
+        page_length = 100
         try:
             params = {
                 "q": f"dateloadedfrom:{date_string}",
-                "p": self.page_length,
+                "p": page_length,
                 "api_key": self.api_key,
                 "entitlement": self.entitlement_id,
+                "s": 1,
             }
             response = requests.get(self.BASE_URL, params=params)
             response.raise_for_status()
             total_results = int(response.json()["result"][0]["total"])
-            if total_results <= self.page_length:
+            if total_results <= page_length:
                 for record in response.json()["records"]:
                     yield record
             else:
@@ -200,7 +201,7 @@ class SpringerClient(object):
                     response = requests.get(self.BASE_URL, params=params)
                     for record in response.json()["records"]:
                         yield record
-                    start += self.page_length
+                    start += page_length
         except Exception as err:
             raise APIException(err)
 

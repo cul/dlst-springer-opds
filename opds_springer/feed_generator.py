@@ -160,7 +160,6 @@ class BookOPDS(object):
         """Creates dictionary of book metadata."""
         metadata = {
             "identifier": f"urn:doi:{self.book.book_id}",
-            # "modified": "2023-05-24T23:24:11",
             "modified": self.book.modified.isoformat(),
             "title": self.book.title,
             "language": self.book.language,
