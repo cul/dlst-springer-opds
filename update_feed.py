@@ -8,10 +8,6 @@ def main():
     parser = argparse.ArgumentParser(
         description="Add recent books to database and create an updated OPDS feed."
     )
-    parser.add_argument(
-        "series_uri",
-        help="ASpace ID of parent series. E.g., /repositories/2/archival_objects1234",
-    )
     parser.add_argument("days", help="Number of days ago to get books from.")
     args = parser.parse_args()
     BookData().save_books_from_api(args.days)
