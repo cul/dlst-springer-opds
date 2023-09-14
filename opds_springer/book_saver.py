@@ -1,6 +1,7 @@
 import logging
 from configparser import ConfigParser
 from csv import QUOTE_NONE, DictReader
+from datetime import date, datetime, timedelta
 
 import requests
 
@@ -15,7 +16,7 @@ class BookData(object):
     def __init__(self):
         logging.basicConfig(
             datefmt="%m/%d/%Y %I:%M:%S %p",
-            filename="book_saver.log",
+            filename=datetime.now().strftime("book_saver_%Y%m%d.log"),
             format="%(asctime)s %(message)s",
             level=logging.INFO,
         )
@@ -24,20 +25,84 @@ class BookData(object):
         self.api_key = self.config.get("Springer", "api_key")
         self.entitlement_id = self.config.get("Springer", "entitlement")
         self.kbart_file = self.config.get("Springer", "kbart_path")
+        self.springer_client = SpringerClient(self.api_key, self.entitlement_id)
 
-    def save_books(self):
+    def save_books_from_api(self, days=30):
+        """Saves books from Springer API loaded after x days ago.
+
+        Args:
+            days (int): number of days ago to load from
+        """
+        from_date = (date.today() - timedelta(days=days)).isoformat()
+        recent_books = self.springer_client.books_loaded_from(from_date)
+        for record in recent_books:
+            try:
+                book_id = record["doi"]
+                if not session.get(Book, book_id):
+                    logging.info(f"Saving {book_id}...")
+                    links = self.springer_client.get_links(record)
+                    book = Book(
+                        book_id=book_id,
+                        title=record["publicationName"],
+                        print_isbn=record["printIsbn"],
+                        ebook_isbn=record["electronicIsbn"],
+                        publisher=record["publisherName"],
+                        series_id=record.get("seriesId"),
+                        language=record["language"],
+                        description=record["abstract"],
+                        published=record["publicationDate"],
+                        authors=self.springer_client.parse_contributors(
+                            record.get("creators"), "creator"
+                        ),
+                        editors=self.springer_client.parse_contributors(
+                            record.get("bookEditors"), "bookEditor"
+                        ),
+                    )
+                    for pub_type, link in links:
+                        new_link = Link(pub_type=pub_type, href=link)
+                        book.links.append(new_link)
+                    for subject in record["subjects"]:
+                        if (
+                            session.query(Subject)
+                            .filter_by(subject=subject, source="springer")
+                            .first()
+                        ):
+                            subject_record = (
+                                session.query(Subject)
+                                .filter_by(subject=subject, source="springer")
+                                .first()
+                            )
+                            book.subjects.append(subject_record)
+                        else:
+                            new_subject = Subject(subject=subject, source="springer")
+                            session.add(new_subject)
+                            subject_record = (
+                                session.query(Subject)
+                                .filter_by(subject=subject, source="springer")
+                                .first()
+                            )
+                            book.subjects.append(subject_record)
+                    session.add(book)
+                    session.commit()
+            except APIException as e:
+                logging.error(e)
+                pass
+            except Exception as e:
+                logging.error(e)
+                pass
+
+    def save_books_from_kbart(self):
         """Saves books from a kbart file to database.
 
         Supplements kbart data with data from Springer API.
         """
-        springer_client = SpringerClient(self.api_key, self.entitlement_id)
         kbart_rows = self.parse_kbart_tsv()
         for kbart_row in kbart_rows:
             try:
                 book_id = kbart_row["title_id"]
-                logging.info(f"Saving {book_id}...")
                 if not session.get(Book, book_id):
-                    springer_data = springer_client.get_book_data(book_id)
+                    logging.info(f"Saving {book_id}...")
+                    springer_data = self.springer_client.supplement_book_data(book_id)
                     book = Book(
                         book_id=book_id,
                         title=kbart_row["publication_title"],
@@ -108,7 +173,39 @@ class SpringerClient(object):
         self.api_key = api_key
         self.entitlement_id = entitlement_id
 
-    def get_book_data(self, doi):
+    def books_loaded_from(self, date_string):
+        """Gets book data from the Springer API for books added since a date.
+
+        Args:
+            date_string (str): date to start from, formatted YYYY-MM-DD
+        """
+        page_length = 100
+        try:
+            params = {
+                "q": f"dateloadedfrom:{date_string}",
+                "p": page_length,
+                "api_key": self.api_key,
+                "entitlement": self.entitlement_id,
+                "s": 1,
+            }
+            response = requests.get(self.BASE_URL, params=params)
+            response.raise_for_status()
+            total_results = int(response.json()["result"][0]["total"])
+            if total_results <= page_length:
+                for record in response.json()["records"]:
+                    yield record
+            else:
+                start = 1
+                while response.json().get("nextPage"):
+                    params["s"] = start
+                    response = requests.get(self.BASE_URL, params=params)
+                    for record in response.json()["records"]:
+                        yield record
+                    start += page_length
+        except Exception as err:
+            raise APIException(err)
+
+    def supplement_book_data(self, doi):
         """Gets and formats book data from the Springer API.
 
         Args:
