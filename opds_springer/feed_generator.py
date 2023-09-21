@@ -1,5 +1,7 @@
 import json
+import logging
 from configparser import ConfigParser
+from datetime import datetime
 from math import ceil
 from pathlib import Path
 
@@ -10,6 +12,12 @@ from .books_db import Book, session
 
 class GenerateFeed(object):
     def __init__(self):
+        logging.basicConfig(
+            datefmt="%m/%d/%Y %I:%M:%S %p",
+            filename=datetime.now().strftime("feed_generator_%Y%m%d.log"),
+            format="%(asctime)s %(message)s",
+            level=logging.INFO,
+        )
         self.config = ConfigParser()
         self.config.read("local_settings.cfg")
         self.json_dir = self.config.get("Feed", "json_dir")
@@ -20,7 +28,10 @@ class GenerateFeed(object):
 
     def opds_feed(self):
         """Creates a feed of OPDS data from saved books."""
+        print("testing 123")
+        logging.info(f"Starting feed generation to {self.json_dir}")
         self.total_pubs = session.query(Book).count()
+        logging.info(f"{self.total_pubs} publications will be in feed")
         self.total_pages = ceil(self.total_pubs / self.page_size)
         books = self.get_books_from_db()
         count = 1
@@ -32,6 +43,7 @@ class GenerateFeed(object):
             if count % self.page_size == 0 or count == self.total_pubs:
                 opds_page = self.opds_page_data(page_number, publications)
                 opds_page["metadata"]["itemsPerPage"] = len(publications)
+                logging.info(f"Writing page {page_number}")
                 self.write_json(page_number, opds_page)
                 page_number += 1
                 publications = []
