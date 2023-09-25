@@ -28,17 +28,19 @@ class GenerateFeed(object):
 
     def opds_feed(self):
         """Creates a feed of OPDS data from saved books."""
-        print("testing 123")
         logging.info(f"Starting feed generation to {self.json_dir}")
         self.total_pubs = session.query(Book).count()
         logging.info(f"{self.total_pubs} publications will be in feed")
         self.total_pages = ceil(self.total_pubs / self.page_size)
         books = self.get_books_from_db()
+        logging.info("Retrieving books...")
         count = 1
         publications = []
         page_number = 1
         for book in books:
+            logging.info(f"Creating JSON for book {count}...")
             book_json = BookOPDS().create_json(book)
+            logging.info(f"Created JSON for book {count}")
             publications.append(book_json)
             if count % self.page_size == 0 or count == self.total_pubs:
                 opds_page = self.opds_page_data(page_number, publications)
