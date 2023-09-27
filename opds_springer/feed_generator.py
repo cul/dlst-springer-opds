@@ -38,9 +38,7 @@ class GenerateFeed(object):
         publications = []
         page_number = 1
         for book in books:
-            logging.info(f"Creating JSON for book {count}...")
             book_json = BookOPDS().create_json(book)
-            logging.info(f"Created JSON for book {count}")
             publications.append(book_json)
             if count % self.page_size == 0 or count == self.total_pubs:
                 opds_page = self.opds_page_data(page_number, publications)
