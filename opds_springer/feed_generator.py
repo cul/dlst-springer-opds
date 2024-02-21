@@ -5,7 +5,7 @@ from datetime import datetime
 from math import ceil
 from pathlib import Path
 
-from sqlalchemy import select
+from sqlalchemy import desc, select
 
 from .books_db import Book, session
 
@@ -145,7 +145,7 @@ class GenerateFeed(object):
         Yields:
             obj: book record
         """
-        result = session.execute(select(Book))
+        result = session.execute(select(Book).order_by(desc(Book.modified)))
         for book in result.all():
             yield book[0]
 
