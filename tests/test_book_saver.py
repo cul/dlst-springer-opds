@@ -1,7 +1,7 @@
 import json
-import types
 import unittest
 from pathlib import Path
+from types import GeneratorType
 from unittest.mock import patch
 
 import responses
@@ -19,7 +19,7 @@ class TestBookData(unittest.TestCase):
         book_data = BookData()
         book_data.kbart_file = Path("fixtures", "springer_kbart_example.txt")
         parsed_kbart = book_data.parse_kbart_tsv()
-        self.assertIsInstance(parsed_kbart, types.GeneratorType)
+        self.assertIsInstance(parsed_kbart, GeneratorType)
         self.assertEqual(len([x for x in parsed_kbart]), 51)
 
 
@@ -28,15 +28,41 @@ class TestSpringerClient(unittest.TestCase):
         springer_client = SpringerClient("api_key", "entitlement_id")
         self.assertTrue(springer_client)
 
+    @responses.activate
+    def test_books_loaded_from(self):
+        springer_client = SpringerClient(
+            "3ee6153f5ef441579808d667c16df936", "entitlement_id"
+        )
+        with open(Path("fixtures", "springer_crawl_example.json")) as f:
+            response_json = json.load(f)
+        params = {
+            "q": "dateloadedfrom:2023-08-11",
+            "p": 100,
+            "api_key": "3ee6153f5ef441579808d667c16df936",
+            "entitlement": "entitlement_id",
+            "s": 1,
+        }
+        responses.get(
+            url="https://spdi.public.springernature.app/bookmeta/v1/json",
+            json=response_json,
+            match=[matchers.query_param_matcher(params)],
+        )
+        book_data = springer_client.books_loaded_from("2023-08-11")
+        self.assertIsInstance(book_data, GeneratorType)
+        first_book = next(book_data)
+        print(first_book)
+
     @patch("opds_springer.book_saver.SpringerClient.request_book")
-    def test_get_book_data(self, mock_book):
+    def test_supplement_book_data(self, mock_book):
         springer_client = SpringerClient(
             "3ee6153f5ef441579808d667c16df936", "entitlement_id"
         )
         with open(Path("fixtures", "springer_book_example.json")) as f:
             page_data = json.load(f)
         mock_book.return_value = page_data["records"][0]
-        book_data = springer_client.get_book_data("doi:10.1007/978-1-349-11550-1")
+        book_data = springer_client.supplement_book_data(
+            "doi:10.1007/978-1-349-11550-1"
+        )
         self.assertIsInstance(book_data, dict)
         self.assertEqual(book_data["publication_date"], "1991-01-01")
 
@@ -53,7 +79,7 @@ class TestSpringerClient(unittest.TestCase):
             "entitlement": "entitlement_id",
         }
         responses.get(
-            url="https://api.springernature.com/bookmeta/v1/json",
+            url="https://spdi.public.springernature.app/bookmeta/v1/json",
             json=response_json,
             match=[matchers.query_param_matcher(params)],
         )

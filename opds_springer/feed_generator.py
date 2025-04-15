@@ -1,26 +1,39 @@
 import json
+import logging
 from configparser import ConfigParser
+from datetime import datetime
 from math import ceil
 from pathlib import Path
 
-from sqlalchemy import select
+from sqlalchemy import desc, select
 
 from .books_db import Book, session
 
 
 class GenerateFeed(object):
     def __init__(self):
+        logging.basicConfig(
+            datefmt="%m/%d/%Y %I:%M:%S %p",
+            filename=datetime.now().strftime("feed_generator_%Y%m%d.log"),
+            format="%(asctime)s %(message)s",
+            level=logging.INFO,
+        )
         self.config = ConfigParser()
         self.config.read("local_settings.cfg")
         self.json_dir = self.config.get("Feed", "json_dir")
         self.feed_title = self.config.get("Feed", "title")
+        self.base_url = self.config.get("Feed", "base_url")
+        self.feed_base_name = "_".join(self.feed_title.lower().split(" "))
         self.page_size = 1000
 
     def opds_feed(self):
         """Creates a feed of OPDS data from saved books."""
+        logging.info(f"Starting feed generation to {self.json_dir}")
         self.total_pubs = session.query(Book).count()
+        logging.info(f"{self.total_pubs} publications will be in feed")
         self.total_pages = ceil(self.total_pubs / self.page_size)
         books = self.get_books_from_db()
+        logging.info("Retrieving books...")
         count = 1
         publications = []
         page_number = 1
@@ -30,6 +43,7 @@ class GenerateFeed(object):
             if count % self.page_size == 0 or count == self.total_pubs:
                 opds_page = self.opds_page_data(page_number, publications)
                 opds_page["metadata"]["itemsPerPage"] = len(publications)
+                logging.info(f"Writing page {page_number}")
                 self.write_json(page_number, opds_page)
                 page_number += 1
                 publications = []
@@ -42,7 +56,7 @@ class GenerateFeed(object):
             page_number (int): page number to append to end of filename
             opds_page (dict): OPDS data to write
         """
-        output_file = Path(self.json_dir, f"springer_feed_{page_number}.json")
+        output_file = Path(self.json_dir, f"{self.feed_base_name}_{page_number}.json")
         with open(output_file, "w") as json_file:
             json.dump(opds_page, json_file, indent=4)
 
@@ -121,7 +135,7 @@ class GenerateFeed(object):
         """
         return {
             "rel": rel,
-            "href": f"https://ebooks-test.library.columbia.edu/static-feeds/springer_test/springer_feed_{page_number}.json",
+            "href": f"{self.base_url}/{self.feed_base_name}_{page_number}.json",
             "type": "application/opds+json",
         }
 
@@ -131,7 +145,7 @@ class GenerateFeed(object):
         Yields:
             obj: book record
         """
-        result = session.execute(select(Book))
+        result = session.execute(select(Book).order_by(desc(Book.modified)))
         for book in result.all():
             yield book[0]
 
